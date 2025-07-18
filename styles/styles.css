@@ -17,9 +17,15 @@
 body {
   color: var(--negro-suave);
   background-color: var(--blanco);
-  font-family: Arial, sans-serif;
   height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
   /* overflow-y: hidden; */
+}
+.hero-solar {
+  background: linear-gradient(135deg, var(--azul-oscuro), var(--amarillo-solar));
+  color: var(--blanco);
 }
 
 header{
@@ -303,3 +309,60 @@ background-color: purple;
 .ContenedorEnergiaMareomotriz{
   background-color: rgb(115, 212, 136);
 }
+
+
+
+
+
+/* Estilos agregados Merge desde Landing branch */
+
+.beneficios-solar h4 {
+  color: var(--amarillo-solar);
+  font-weight: bold;
+}
+
+.beneficios-solar p {
+  color: var(--negro-suave);
+  font-size: 1rem;
+}
+
+.como-funciona p {
+  line-height: 1.7;
+}
+
+.cta-solar h2,
+.cta-solar p {
+  color: var(--blanco);
+}
+
+/* Corrección menú personalizado */
+.navbarF {
+  background-color: var(--azul-oscuro) !important;
+}
+
+.navbarF .nav-link {
+  color: var(--blanco) !important;
+  font-weight: bold;
+}
+
+.navbarF .nav-link:hover,
+.navbarF .nav-link.active {
+  color: var(--amarillo-solar) !important;
+}
+
+.nav-search input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.nav-search .buscar {
+  background-color: var(--amarillo-solar);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+/* -------------------------------------- */
+    
