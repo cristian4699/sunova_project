@@ -32,6 +32,12 @@ body {
   color: var(--blanco);
 }
 
+.container{
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
 header {
   border-top: 5px solid var(--amarillo-solar);
 }
@@ -274,6 +280,7 @@ footer p {
 }
 
 /* ESTE ES EL CSS DE INFORMATION */
+<<<<<<< HEAD
 #DEC1 {
   display: flex;
 
@@ -285,6 +292,30 @@ footer p {
 }
 .ContenedorEnergiasRenovables {
   background-color: purple;
+=======
+/* #DEC1{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC2{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC3{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC4{
+    display:flex;
+    border-radius: 20%;
+} 
+ */
+.ContenedorDecadas {
+    background-color:var(--gris-claro);
+}
+.ContenedorEnergiasRenovables{
+background-color:var(--gris-claro);
+>>>>>>> information
 }
 #EnergiaEolica {
   text-align: center;
@@ -300,6 +331,21 @@ footer p {
   text-align: center;
   background-color: #6e8fdc;
 }
+#EnergiaGeotermica{
+   text-align: center;
+  background-color: #6e8fdc;
+}
+
+#EnergiaBiomasa{
+   text-align: center;
+  background-color: #6e8fdc;
+}
+#Eleccion{
+  text-align: center;
+}
+
+.ContenedorEnergiaSolar{
+  background-color:var(--gris-claro);
 
 .ContenedorEnergiaSolar {
   background-color: pink;
@@ -362,3 +408,34 @@ footer p {
 }
 
 /* -------------------------------------- */
+.ContenedorEnergiaEolica{
+  background-color:var(--gris-claro);
+  ;
+}
+.ContenedorEnergiaMareomotriz{
+  background-color:var(--gris-claro);
+}
+
+.ContenedorEnergiaGeotermica{
+  background-color:var(--gris-claro);
+}
+
+.ContenedorBiomasaHidroenergía{
+  background-color:var(--gris-claro);
+}
+
+.ContenedorPaneles{
+  background-color: silver;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: red;
+   transition: background-color 10s;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: blue;
+    cursor:pointer;
+}
