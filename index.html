@@ -7,102 +7,210 @@
     <meta name="keywords" content="HTML, CSS, JAVASCRIPT, Energia solar, Energias renovables, Mintic, TalentoTech">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>SUNOVA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style>
+      :root {
+        --azul-oscuro: #1f2a44;
+        --amarillo-solar: #f6b000;
+        --blanco: #ffffff;
+        --gris-claro: #e0e0e0;
+        --negro-suave: #333333;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--blanco);
+        margin: 0;
+        padding: 0;
+      }
+
+      .hero-solar {
+        background: linear-gradient(135deg, var(--azul-oscuro), var(--amarillo-solar));
+        color: var(--blanco);
+      }
+
+      .beneficios-solar h4 {
+        color: var(--amarillo-solar);
+        font-weight: bold;
+      }
+
+      .beneficios-solar p {
+        color: var(--negro-suave);
+        font-size: 1rem;
+      }
+
+      .como-funciona p {
+        line-height: 1.7;
+      }
+
+      .cta-solar h2,
+      .cta-solar p {
+        color: var(--blanco);
+      }
+
+      /* Corrección menú personalizado */
+      .navbarF {
+        background-color: var(--azul-oscuro) !important;
+      }
+
+      .navbarF .nav-link {
+        color: var(--blanco) !important;
+        font-weight: bold;
+      }
+
+      .navbarF .nav-link:hover,
+      .navbarF .nav-link.active {
+        color: var(--amarillo-solar) !important;
+      }
+
+      .nav-search input {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+
+      .nav-search .buscar {
+        background-color: var(--amarillo-solar);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 5px;
+      }
+    </style>
   </head>
+
   <body>
     <div class="container-fluid layout-container">
       <!-- Header -->
       <header>
         <div class="container">
           <div class="row">
-            <!-- <div class="topbar">
-              <p>Soporte | Buscar soluciones | Contacto</p>
-            </div> -->
-            <nav class="navbar col-xs-12 col-md-12 col-lg-12">
+            <nav class="navbar col-12">
               <div class="logo">
                 <img src="img/Logo_Proyecto.jpg" alt="Logo SUNOVA" style="height: 50px; vertical-align: middle;" />
                 <span style="font-weight: bold; font-size: 22px; color: var(--amarillo-solar); margin-left: 10px;">SUNOVA</span>
               </div>
-              <div class="nav-search">
+              <div class="nav-search d-flex align-items-center">
                 <input type="text" placeholder="Buscar productos o información..." />
                 <button class="buscar">🔍</button>
               </div>
             </nav>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary navbarF col-xs-12 col-md-12 col-lg-12">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="home_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        Inicio
-                      </a>
-                    </li>
-                    <li id="history_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        ¿Que son Energías renovables?</li>
-                      </a>
-                    <li id="stadistics_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        Estadisticas
-                      </a>
-                    </li>
-                    <li id="about_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        Sobre el proyecto 
-                      </a>
-                    </li>
-                    <li id="store_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        Tienda Virtual
-                      </a>
-                    </li>
-                    <li id="login_button" class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        Login
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>  
-            </nav>
+
+            <nav class="navbar navbar-expand-lg navbarF col-14 my-4 mt-3">
+
+  <div class="container-fluid justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="menu navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">¿Qué son Energías renovables?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Estadísticas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sobre el proyecto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tienda Virtual</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- MAIN -->
+      <main class="main-container" id="main-container"> 
+        <!-- Hero principal -->
+        <section class="hero-solar text-white text-center py-5">
+          <div class="container">
+            <h1 class="display-4 fw-bold">Impulsa tu futuro con energía solar</h1>
+            <p class="lead mt-3">En <strong>SUNOVA</strong> te ofrecemos soluciones sostenibles que te permiten ahorrar, proteger el medio ambiente y tener independencia energética. Descubre cómo convertir tu hogar o negocio en un espacio más eficiente y comprometido con el planeta.</p>
+            <a href="#" class="btn btn-warning mt-4 px-4 py-2 fw-semibold">Solicita una cotización gratuita</a>
+          </div>
+        </section>
+        
+
+        <!-- Beneficios -->
+        <section class="beneficios-solar py-5">
+          <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--azul-oscuro); font-weight: bold;">¿Por qué elegir energía solar con SUNOVA?</h2>
+            <div class="row text-center">
+              <div class="col-md-4 mb-5">
+                <img src="img/ahorroenergetico.jpg" alt="Ahorro energético" style="height: 80px;">
+                <h4 class="mt-3">Ahorro a largo plazo</h4>
+                <p>Reduce hasta un 90% tu factura de electricidad y protege tu economía frente a futuros aumentos de tarifas. Tu inversión se paga sola en pocos años.</p>
+              </div>
+              <div class="col-md-4 mb-5">
+                <img src="img/cuidadodelmedioambiente1.jpg" alt="Cuidado del medio ambiente" style="height: 80px;">
+                <h4 class="mt-3">Compromiso con el planeta</h4>
+                <p>Disminuye tu huella de carbono y contribuye a mitigar el cambio climático. Utilizar energía solar evita toneladas de emisiones contaminantes al año.</p>
+              </div>
+              <div class="col-md-4 mb-5">
+                <img src="img/instalacionpanel.jpg" alt="Instalación profesional" style="height: 80px;">
+                <h4 class="mt-3">Instalación profesional</h4>
+                <p>Diseñamos e instalamos sistemas adaptados a tus necesidades. Nuestro equipo técnico se encarga de todo: permisos, montaje, configuración y mantenimiento.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Funcionamiento -->
+        <section class="como-funciona py-5" style="background-color: var(--gris-claro);">
+          <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--azul-oscuro); font-weight: bold;">¿Cómo funciona la energía solar?</h2>
+            <div class="row align-items-center">
+              <div class="col-md-6 mb-4">
+                <p style="font-size: 1.1rem; color: var(--negro-suave);">
+                  Los paneles solares captan la luz del sol y la convierten en energía eléctrica mediante celdas fotovoltaicas. Esta energía puede utilizarse en tiempo real o almacenarse en baterías para ser usada durante la noche o en días nublados.
+                </p>
+                <p style="font-size: 1.1rem; color: var(--negro-suave);">
+                  Un inversor convierte la energía continua en alterna para que puedas usarla con todos tus electrodomésticos. Puedes monitorear tu consumo en tiempo real desde cualquier dispositivo.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="img/funcionamientopaneles.png" alt="Funcionamiento energía solar" class="img-fluid rounded shadow" style="width: 300px;">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="cta-solar py-5 text-center text-white" style="background-color: var(--amarillo-solar);">
+          <div class="container">
+            <h2 class="fw-bold">
+              ¿Estás listo para dar el paso hacia un futuro más limpio?
+            </h2>
+            <p class="mt-3 fs-5">
+              Cotiza tu sistema solar personalizado hoy mismo y empieza a generar tu propia energía. 
+              Si lo prefieres, también puedes explorar nuestra tienda virtual y encontrar kits solares, 
+              paneles y accesorios listos para comprar.
+            </p>
+            <a href="#" class="btn btn-light mt-3 px-4 py-2 fw-semibold">Ir a tienda virtual</a>
+          </div>
+        </section>
+
+        <!-- Pie / Contacto -->
+        <div class="logo d-flex align-items-center justify-content-center w-100 py-4" style="gap: 15px;">
+          <img src="img/Logo_Proyecto.jpg" alt="Logo SUNOVA" style="height: 60px;" />
+          <div class="text-start">
+            <div style="font-size: 26px; font-weight: bold; color: var(--amarillo-solar); line-height: 1.2;">
+              SUNOVA
+            </div>
+            <div style="font-size: 16px; color: var(--negro-suave); line-height: 1.5;">
+              📞 <a href="tel:+573123456789" style="color: var(--negro-suave); text-decoration: none;">+57 312 345 6789</a><br>
+              ✉️ <a href="mailto:contacto@sunova.com" style="color: var(--negro-suave); text-decoration: none;">energiaSunova@gmail.com</a>
+            </div>
           </div>
         </div>
-      </header>
-      <main class="main-container" id="main-container"> 
-        <!-- Espacio donde vamos a generar el HTML de cada sección individual. -->
 
-          
       </main>
-      
-      <!-- Footer -->
-      <footer>
-        <div class="footer-grid">
-          <!-- <div>
-            <h4>Inicio</h4>
-            <ul><li>Inicio</li><li>Dashboard</li></ul>
-          </div>
-          <div>
-            <h4>Soporte</h4>
-            <ul><li>Contacto</li><li>Ayuda</li></ul>
-          </div>
-          <div>
-            <h4>Redes</h4>
-            <ul><li>Facebook</li><li>Twitter</li></ul>
-          </div>
-        </div> -->
-        <p class="copyright">© 2025 SUNOVA</p>
-      </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script> -->
-    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
 
 
