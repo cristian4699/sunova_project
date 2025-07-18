@@ -49,13 +49,6 @@ login_button.addEventListener("click", function () {
 
 /* ----------------------  Manejo de templates ----------------*/
 
-// Obtener la plantilla
-const plantilla = document.getElementById("information-section");
 
-// Clonar el contenido de la plantilla
-const clon = plantilla.content.cloneNode(true);
-
-// Insertar el contenido clonado en el contenedor
-document.getElementById("main-container").appendChild(clon);
 
 /* ----------------------  ------------------ ----------------*/
