@@ -280,7 +280,6 @@ footer p {
 }
 
 /* ESTE ES EL CSS DE INFORMATION */
-<<<<<<< HEAD
 #DEC1 {
   display: flex;
 
@@ -292,30 +291,6 @@ footer p {
 }
 .ContenedorEnergiasRenovables {
   background-color: purple;
-=======
-/* #DEC1{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC2{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC3{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC4{
-    display:flex;
-    border-radius: 20%;
-} 
- */
-.ContenedorDecadas {
-    background-color:var(--gris-claro);
-}
-.ContenedorEnergiasRenovables{
-background-color:var(--gris-claro);
->>>>>>> information
 }
 #EnergiaEolica {
   text-align: center;
@@ -438,4 +413,72 @@ nav ul li a:hover{
     text-decoration: none;
     color: blue;
     cursor:pointer;
+}
+
+
+/* Estilos store section */
+
+/* CONTENIDO PRINCIPAL */
+main.contenido {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--azul-oscuro);
+  margin-bottom: 30px;
+}
+
+/* PRODUCTOS */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.producto {
+  background-color: var(--gris-claro);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.producto a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--amarillo-solar);
+  color: var(--azul-oscuro);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.producto a:hover {
+  background-color: #d49f00;
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    justify-content: flex-start;
+  }
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
 }

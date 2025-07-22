@@ -19,7 +19,16 @@ home_button.addEventListener("click", function () {
 });
 
 history_button.addEventListener("click", function () {
-  alert("Boton history presionado");
+
+    document.getElementById("main-container").innerHTML = "";
+
+  const plantilla = document.getElementById("information-section");
+
+  // Clonar el contenido de la plantilla
+  const clon = plantilla.content.cloneNode(true);
+
+  // Insertar el contenido clonado en el contenedor
+  document.getElementById("main-container").appendChild(clon);
 });
 
 
@@ -36,19 +45,19 @@ stadistics_button.addEventListener("click", function () {
 });
 
 about_button.addEventListener("click", function () {
+    alert("Boton history presionado");
+});
+
+store_button.addEventListener("click", function () {
   document.getElementById("main-container").innerHTML = "";
 
-  const plantilla = document.getElementById("information-section");
+  const plantilla = document.getElementById("store-section");
 
   // Clonar el contenido de la plantilla
   const clon = plantilla.content.cloneNode(true);
 
   // Insertar el contenido clonado en el contenedor
   document.getElementById("main-container").appendChild(clon);
-});
-
-store_button.addEventListener("click", function () {
-  alert("Boton tienda virtual presionado");
 });
 
 login_button.addEventListener("click", function () {
