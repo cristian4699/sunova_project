@@ -51,8 +51,8 @@ header {
   padding: 0;
 }
 
-.information-container {
-}
+/* .information-container {
+} */
 
 /* Barra superior */
 .topbar {
@@ -279,83 +279,7 @@ footer p {
   text-align: center;
 }
 
-/* ESTE ES EL CSS DE INFORMATION */
-<<<<<<< HEAD
-#DEC1 {
-  display: flex;
 
-  border-radius: 20%;
-}
-.ContenedorDecadas {
-  background-color: #f6b000;
-  display: none;
-}
-.ContenedorEnergiasRenovables {
-  background-color: purple;
-=======
-/* #DEC1{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC2{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC3{
-    display:flex;
-    border-radius: 20%;
-} 
-#DEC4{
-    display:flex;
-    border-radius: 20%;
-} 
- */
-.ContenedorDecadas {
-    background-color:var(--gris-claro);
-}
-.ContenedorEnergiasRenovables{
-background-color:var(--gris-claro);
->>>>>>> information
-}
-#EnergiaEolica {
-  text-align: center;
-  background-color: #6e8fdc;
-}
-
-#EnergiaSolar {
-  text-align: center;
-  background-color: #6e8fdc;
-}
-
-#EnergiaMareomotriz {
-  text-align: center;
-  background-color: #6e8fdc;
-}
-#EnergiaGeotermica{
-   text-align: center;
-  background-color: #6e8fdc;
-}
-
-#EnergiaBiomasa{
-   text-align: center;
-  background-color: #6e8fdc;
-}
-#Eleccion{
-  text-align: center;
-}
-
-.ContenedorEnergiaSolar{
-  background-color:var(--gris-claro);
-
-.ContenedorEnergiaSolar {
-  background-color: pink;
-}
-.ContenedorEnergiaEolica {
-  background-color: rgb(207, 70, 93);
-}
-.ContenedorEnergiaMareomotriz {
-  background-color: rgb(115, 212, 136);
-}
 
 /* Estilos agregados Merge desde Landing branch */
 
@@ -408,34 +332,138 @@ background-color:var(--gris-claro);
 }
 
 /* -------------------------------------- */
+/* ESTE ES EL CSS DE INFORMATION */
+/* <<<<<<< HEAD */
+#DEC1 {
+  display: flex;
+
+  border-radius: 20%;
+}
+.ContenedorDecadas {
+
+  display: none;
+}
+.ContenedorEnergiasRenovables {
+ 
+}
+ #DEC1{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC2{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC3{
+    display:flex;
+    border-radius: 20%;
+} 
+#DEC4{
+    display:flex;
+    border-radius: 20%;
+} 
+ */
+.ContenedorDecadas {
+    background-color:var(--gris-claro);
+}
+.ContenedorEnergiasRenovables{
+background-color:var(--gris-claro);
+/* >>>>>>> information */
+}
+#Eolica {
+  text-align: center;
+  background-color: #6e8fdc;
+}
+
+#Solar {
+  text-align: center;
+  background-color: #6e8fdc;
+}
+
+#Mareomotriz {
+  text-align: center;
+  background-color: #6e8fdc;
+}
+#Geotermica{
+   text-align: center;
+  background-color: #6e8fdc;
+}
+
+#Biomasa{
+   text-align: center;
+  background-color: #6e8fdc;
+}
+#Eleccion{
+  text-align: center;
+}
+
+
+
+.ContenedorEnergiaSolar {
+      width: 100%;
+      height: auto;
+      background: linear-gradient(to right, white, transparent), url(IMG_PANEL_5.jpg) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+
 .ContenedorEnergiaEolica{
-  background-color:var(--gris-claro);
-  ;
+ width: 100%;
+      height: auto;
+      background: linear-gradient(to right, white 40%, transparent), url(IMG_EOLICA.jpeg) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
 }
 .ContenedorEnergiaMareomotriz{
-  background-color:var(--gris-claro);
+   width: 100%;
+      height: auto;
+      background: linear-gradient(to right, white 4%, transparent), url(IMG_MEREO.webp) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
 }
 
 .ContenedorEnergiaGeotermica{
-  background-color:var(--gris-claro);
+ width: 100%;
+      height: auto;
+            background: linear-gradient(to right, white 4%, transparent), url(IMG_GEO2.jpg) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
 }
-
 .ContenedorBiomasaHidroenergía{
-  background-color:var(--gris-claro);
+ width: 100%;
+      height: auto;
+      background: linear-gradient(to right, white 40%, transparent), url(IMG_BIO.jpg) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
 }
 
 .ContenedorPaneles{
   background-color: silver;
 }
 
-
-nav ul li a{
-    text-decoration: none;
-    color: red;
-   transition: background-color 10s;
+#NavEne a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: blue;
+  transition: background-color 10s;
 }
-nav ul li a:hover{
+
+
+#NavEne a:hover{
     text-decoration: none;
-    color: blue;
+    color:var(--amarillo-solar);
     cursor:pointer;
 }
