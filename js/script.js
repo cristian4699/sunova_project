@@ -68,3 +68,14 @@ login_button.addEventListener("click", function () {
   document.getElementById("main-container").appendChild(clon);
 
 /* ----------------------  ------------------ ----------------*/
+
+/* -------------ACA ES EL BOTON DE SUBIR------------------- */
+
+// Función para subir al inicio
+document.getElementById("botonSubir").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+

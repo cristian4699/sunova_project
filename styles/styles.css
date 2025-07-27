@@ -336,33 +336,31 @@ footer p {
 /* <<<<<<< HEAD */
 #DEC1 {
   display: flex;
+text-align: center;
 
-  border-radius: 20%;
 }
-.ContenedorDecadas {
 
-  display: none;
-}
-.ContenedorEnergiasRenovables {
- 
-}
  #DEC1{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+
 } 
 #DEC2{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+   
 } 
 #DEC3{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+  
 } 
 #DEC4{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+    padding: 19px;
 } 
- */
+ 
 .ContenedorDecadas {
     background-color:var(--gris-claro);
 }
@@ -467,3 +465,32 @@ background-color:var(--gris-claro);
     color:var(--amarillo-solar);
     cursor:pointer;
 }
+
+#NabInfo{
+/* padding: 15px 20px; */
+  display: flex 100%;
+  /* justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gris-claro); */
+}
+
+/* BOTON DE SUBIR */
+
+#botonSubir {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: var(--azul-oscuro);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    #botonSubir:hover {
+      background-color: var(--amarillo-solar);
+    }
