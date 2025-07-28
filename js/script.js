@@ -79,3 +79,16 @@ document.getElementById("botonSubir").addEventListener("click", function () {
       });
     });
 
+/* --------- PRUEBA DE SCRIPT DE OCULTAR SECCIONES--------------- */
+ 
+      function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('activa');
+      });
+      document.getElementById(id).classList.add('activa');
+    }
+
+
+  // Opcional: mostrar una sección por defecto al cargar
+/*   window.onload = () => mostrarSeccion('inicio'); */

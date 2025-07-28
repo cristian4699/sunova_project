@@ -243,9 +243,9 @@
 
         <div class='ContenedorDecadas'>
             
-            <h1>Historia de las energias</h1>  <!-- Primera opcion(seccion) la historia -->
+            <h1 style="text-align: center;">Historia de las Energías</h1>  <!-- Primera opcion(seccion) la historia -->
             <br>
-            <section id='DEC1'>
+            <section id='DEC1' class="seccion">
                 <h1><em>Década de 1960–1970</em>: Los primeros pasos modernos</h1>
                 <p>
                 <ul>
@@ -366,27 +366,27 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
                                     <li id="S" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Solar">
+                                        <a class="nav-link active" aria-current="page" href="#Solar" onclick="mostrarSeccion('ContenedorEnergiaSolar')">
                                             ☀️ Energía Solar
                                         </a>
                                     </li>
                                     <li id="E" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Eolica">
+                                        <a class="nav-link active" aria-current="page" href="#Eolica" onclick="mostrarSeccion('ContenedorEnergiaEolica')">
                                             💨 Energía Eólica
                                     </li>
                                     </a>
                                     <li id="M" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Mareomotriz">
+                                        <a class="nav-link active" aria-current="page" href="#Mareomotriz" onclick="mostrarSeccion('ContenedorEnergiaMareomotriz')">
                                             🌊 Energía Mareomotriz
                                         </a>
                                     </li>
                                     <li id="G" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Geotermica">
+                                        <a class="nav-link active" aria-current="page" href="#Geotermica" onclick="mostrarSeccion('ContenedorEnergiaGeotermica')">
                                             🌋 Energía Geotérmica
                                         </a>
                                     </li>
                                     <li id="B" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Biomasa">
+                                        <a class="nav-link active" aria-current="page" href="#Biomasa" onclick="mostrarSeccion('ContenedorBiomasaHidroenergía')">
                                             🌱 Biomasa e Hidroenergía
                                         </a>
                                     </li>
@@ -398,9 +398,9 @@
                 </div>
             </section>
             <section>
-                <div class='ContenedorEnergiaSolar'>
+                <div id='ContenedorEnergiaSolar' class="seccion activa">
                     <h1 id='Solar'><em>Energía solar</em></h1>
-                    <h1>🌇 ¿Que es la energia Solar?</h1>
+                    <h2>🌇 ¿Que es la energia Solar?</h2>
                     <p>
                         La energía solar es una forma de energía renovable que se obtiene directamente del Sol. Es
                         una
@@ -409,7 +409,7 @@
                         varias
                         maneras para generar electricidad, calor o incluso para procesos industriales.
                     </p>
-                    <h1>☀️ ¿Cómo se aprovecha la energía solar?</h1>
+                    <h2>☀️ ¿Cómo se aprovecha la energía solar?</h2>
                     <p>Existen dos formas principales de utilizar la energía solar:</p>
                     <ol>
                         <li>
@@ -438,7 +438,7 @@
                                 <li>Es más adecuada para grandes instalaciones y plantas de energía solar.</li>
                             </ul>
                     </ol>
-                    <h1>🌞 Ventajas de la Energía Solar</h1> <!-- POSIBLE CAMBIO DE VENTAJAS Y DESVENTAJAS  -->
+                    <h2>🌞 Ventajas de la Energía Solar</h2> <!-- POSIBLE CAMBIO DE VENTAJAS Y DESVENTAJAS  -->
                     <ul>
                         <li>Inagotable: el Sol estará activo por miles de millones de años.</li>
                         <li>No contaminante: no emite gases de efecto invernadero.</li>
@@ -446,7 +446,7 @@
                         <li>Versátil: se puede usar en zonas rurales, urbanas, techos, campos, etc.</li>
                         <li>Bajo mantenimiento: los paneles solares requieren poco cuidado.</li>
                     </ul>
-                    <h1>⚠️ Desventajas de la Energía Solar</h1>
+                    <h2>⚠️ Desventajas de la Energía Solar</h2>
                     <ul>
                         <li>Intermitente: depende de la luz solar, por lo que no es constante durante la noche o en
                             días
@@ -460,9 +460,9 @@
                 </div>
             </section>
             <section>
-                <div class='ContenedorEnergiaEolica'>
+                <div id='ContenedorEnergiaEolica' class="seccion">
                     <h1 id='Eolica'><em>Energía Eólica</em></h1>
-                    <h1>🍃 ¿Que es la energia Eólica?</h1>
+                    <h2>🍃 ¿Que es la energia Eólica?</h2>
                     <p>
                         La energía eólica es una forma de energía renovable que se obtiene del viento. Utiliza
                         aerogeneradores
@@ -471,7 +471,7 @@
                         más
                         limpias y sostenibles, ya que no produce emisiones contaminantes durante su operación.
                     </p>
-                    <h1>💨 ¿Cómo se aprovecha la energía eólica?</h1>
+                    <h2>💨 ¿Cómo se aprovecha la energía eólica?</h2>
                     <p>La energía eólica se aprovecha mediante aerogeneradores, que son grandes estructuras con
                         aspas
                         que
@@ -481,7 +481,7 @@
                         (offshore). El movimiento de las aspas hace girar un generador que produce electricidad.</p>
                     <p>Es una de las fuentes de energía más limpias, sostenibles y de más rápido crecimiento en el
                         mundo.</p>
-                    <h1>⚙️ ¿Cómo Funciona la Energía Eólica?</h1>
+                    <h2>⚙️ ¿Cómo Funciona la Energía Eólica?</h2>
                     <ol>
                         <li>
                             <strong>Captación del viento:</strong>
@@ -513,7 +513,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🏭 Tipos de Energía Eólica</h1>
+                    <h2>🏭 Tipos de Energía Eólica</h2>
                     <ol>
                         <li>
                             <strong>Eólica terrestre (onshore)</strong>
@@ -532,7 +532,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🌍 Ventajas de la Energía Eólica</h1>
+                    <h2>🌍 Ventajas de la Energía Eólica</h2>
                     <ul>
                         <li>Renovable e inagotable: el viento es una fuente natural constante.</li>
                         <li>No contamina: no emite gases de efecto invernadero ni residuos tóxicos.</li>
@@ -550,7 +550,7 @@
                         <li>Costos iniciales elevados: especialmente en proyectos offshore.</li>
                         <li>Requiere espacio: para evitar interferencias entre turbinas.</li>
                     </ul>
-                    <h1>📊 Datos Curiosos y Relevantes</h1>
+                    <h2>📊 Datos Curiosos y Relevantes</h2>
                     <ul>
                         <li>Un solo aerogenerador moderno puede alimentar hasta 1.500 hogares.</li>
                         <li>Dinamarca, España y Alemania son líderes en energía eólica en Europa.</li>
@@ -559,9 +559,9 @@
                     </ul>
             </section>
             <section>
-                <div class='ContenedorEnergiaMareomotriz'>
+                <div id='ContenedorEnergiaMareomotriz' class="seccion">
                     <h1 id='Mareomotriz'><em>Energia Mareomotriz</em></h1>
-                    <h1>🌊 ¿Qué es la Energía Mareomotriz?</h1>
+                    <h2>🌊 ¿Qué es la Energía Mareomotriz?</h2>
                     <p>La energía mareomotriz es una forma de energía renovable que se obtiene del movimiento de las
                         mareas,
                         causado por la gravitación entre la Tierra, la Luna y el Sol. Esta energía aprovecha la
@@ -571,7 +571,7 @@
                         debido a
                         sus altos costos y limitaciones geográficas.
                     </p>
-                    <h1>⚙️ ¿Cómo Funciona la Energía Mareomotriz?</h1>
+                    <h2>⚙️ ¿Cómo Funciona la Energía Mareomotriz?</h2>
                     <p>Existen tres tecnologías principales para aprovechar la energía de las mareas:</p>
                     <ol>
                         <li>
@@ -601,7 +601,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🌍 Ventajas de la Energía Mareomotriz</h1>
+                    <h2>🌍 Ventajas de la Energía Mareomotriz</h2>
                     <ul>
                         <li>Renovable e inagotable: las mareas son un fenómeno natural constante.</li>
                         <li>Predecible: a diferencia del viento o el sol, las mareas siguen ciclos regulares.</li>
@@ -612,7 +612,7 @@
                             energía con menos velocidad de movimiento.</li>
                         <li>Larga vida útil: las infraestructuras mareomotrices pueden durar décadas.</li>
                     </ul>
-                    <h1>⚠️ Desventajas de la Energía Mareomotriz</h1>
+                    <h2>⚠️ Desventajas de la Energía Mareomotriz</h2>
                     <ul>
                         <li>Alto costo de inversión: la construcción de presas o turbinas submarinas es muy costosa.
                         </li>
@@ -629,9 +629,9 @@
                 </div>
             </section>
             <section>
-                <div class='ContenedorEnergiaGeotermica'>
+                <div id='ContenedorEnergiaGeotermica' class="seccion">
                     <h1 id='Geotermica'><em>Energía Geotérmica</em></h1>
-                    <h1>🌋 ¿Qué es la Energía Geotérmica?</h1>
+                    <h2>🌋 ¿Qué es la Energía Geotérmica?</h2>
                     <p>La energía geotérmica es una forma de energía renovable que se obtiene del calor interno de
                         la
                         Tierra. Este calor proviene del núcleo terrestre y se transmite hacia la superficie a través
@@ -640,7 +640,7 @@
                     <p>Se puede aprovechar para generar electricidad, calefacción o procesos industriales,
                         dependiendo
                         de la temperatura del recurso geotérmico.</p>
-                    <h1>⚙️ ¿Cómo Funciona la Energía Geotérmica?</h1>
+                    <h2>⚙️ ¿Cómo Funciona la Energía Geotérmica?</h2>
                     <p>El funcionamiento depende del tipo de recurso geotérmico, pero en general sigue estos pasos:
                     </p>
                     <ol>
@@ -671,7 +671,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🔥 Tipos de Plantas Geotérmicas</h1>
+                    <h2>🔥 Tipos de Plantas Geotérmicas</h2>
                     <ol>
                         <li>
                             <strong>Plantas de vapor seco</strong>
@@ -697,7 +697,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🏠 Usos de la Energía Geotérmica</h1>
+                    <h2>🏠 Usos de la Energía Geotérmica</h2>
                     <ul>
                         <li>Generación eléctrica (plantas geotérmicas).</li>
                         <li>Calefacción de edificios (sistemas de calefacción distrital).</li>
@@ -707,7 +707,7 @@
                             geotérmicas para climatización residencial.</li>
                         <li>Bombas de calor geotérmicas para climatización residencial.</li>
                     </ul>
-                    <h1>🌍 Ventajas de la Energía Geotérmica</h1>
+                    <h2>🌍 Ventajas de la Energía Geotérmica</h2>
                     <ul>
                         <li>♻️ Renovable y sostenible: el calor terrestre es prácticamente inagotable.</li>
                         <li>🌱 Bajas emisiones: muy poca contaminación ambiental.</li>
@@ -715,7 +715,7 @@
                         <li>💰 Costos operativos bajos: una vez instalada, es muy económica.</li>
                         <li>🏘️ Aplicable a pequeña y gran escala: desde casas hasta ciudades.</li>
                     </ul>
-                    <h1>⚠️ Desventajas de la Energía Geotérmica</h1>
+                    <h2>⚠️ Desventajas de la Energía Geotérmica</h2>
                     <ul>
                         <li>💸 Alto costo inicial: perforaciones profundas y estudios geológicos son costosos.</li>
                         <li>🌋 Limitada geográficamente: solo viable en zonas con actividad geotérmica (volcanes,
@@ -730,9 +730,9 @@
                 </div>
             </section>
             <section>
-                <div class='ContenedorBiomasaHidroenergía'>
+                <div id='ContenedorBiomasaHidroenergía' class="seccion">
                     <h1 id='Biomasa'><em>Energia Biomasa e Hidroenergía</em></h1>
-                    <h1>🌱 ¿Qué es la Energía de Biomasa?</h1>
+                    <h2>🌱 ¿Qué es la Energía de Biomasa?</h2>
                     <p>La energía de biomasa es una forma de energía renovable que se obtiene a partir de materia
                         orgánica de origen vegetal o animal. Esta materia puede ser utilizada directamente como
                         combustible o transformada en otros tipos de energía, como electricidad, calor o
@@ -740,7 +740,7 @@
                     <p>La biomasa es una de las fuentes de energía más antiguas utilizadas por el ser humano (como
                         la
                         leña), pero hoy en día se aprovecha con tecnologías modernas y sostenibles.</p>
-                    <h1>🔄 ¿Cómo Funciona la Energía de Biomasa?</h1>
+                    <h2>🔄 ¿Cómo Funciona la Energía de Biomasa?</h2>
                     <p>La biomasa puede transformarse en energía mediante varios procesos:</p>
                     <ol>
                         <li>
@@ -784,7 +784,7 @@
                             </ul>
                         </li>
                     </ol>
-                    <h1>🌍 Ventajas de la Energía de Biomasa</h1>
+                    <h2>🌍 Ventajas de la Energía de Biomasa</h2>
                     <ul>
                         <li>♻️ Renovable: mientras se gestione de forma sostenible.</li>
                         <li>🌱 Reduce residuos: aprovecha desechos agrícolas, forestales y urbanos.</li>
@@ -793,7 +793,7 @@
                         <li>🔋 Versátil: puede generar electricidad, calor o combustibles líquidos/gaseosos.</li>
                         <li>🏘️ Desarrollo rural: fomenta empleo local y uso de recursos regionales.</li>
                     </ul>
-                    <h1>⚠️ Desventajas de la Energía de Biomasa</h1>
+                    <h2>⚠️ Desventajas de la Energía de Biomasa</h2>
                     <ul>
                         <li>🌫️ Emisiones contaminantes: si no se controla bien la combustión, puede liberar
                             partículas
@@ -811,10 +811,10 @@
             </section>
         </div>
         <div class='ContenedorPaneles'>
-            <h1>Paneles Solares</h1>
+            <h1 style="text-align: center;">Paneles Solares</h1>
             <br>
             <section id='QueSon'>
-                <h1><em>¿Qué son y Cómo Funcionan? (El Efecto Fotovoltaico)</em></h1>
+                <h2><em>¿Qué son y Cómo Funcionan? (El Efecto Fotovoltaico)</em></h2>
                 <p>Los paneles solares son dispositivos diseñados para captar la energía del sol y convertirla en
                     electricidad o calor. Son una de las tecnologías más utilizadas para aprovechar la energía
                     solar,
@@ -836,7 +836,7 @@
                 </ol>
             </section>
             <section id='ComponentesClave'>
-                <h1><em>Componentes Clave de un Sistema Solar Fotovoltaico (FV)</em></h1>
+                <h2><em>Componentes Clave de un Sistema Solar Fotovoltaico (FV)</em></h2>
                 <ul>
                     <li>
                         Paneles Solares (Módulos FV): Conjunto de células solares interconectadas y encapsuladas
@@ -875,7 +875,7 @@
                 </ul>
             </section>
             <section id='TiposDePaneles'>
-                <h1><em>Tipos de Paneles Solares para tu Hogar o Empresa</em></h1>
+                <h2><em>Tipos de Paneles Solares para tu Hogar o Empresa</em></h2>
                 <ul>
                     <strong>
                         <h4>Paneles Monocristalinos (TOPCon)</h4>
@@ -949,7 +949,7 @@
                     </ul>
                 </ul>
                 <section id='VentajasyDesventajas'>
-                    <h1><em>Ventajas Claras</em></h1>
+                    <h2><em>Ventajas Claras</em></h2>
                     <ul>
                         <li>Energía Renovable y Limpia: Reduce drásticamente la huella de carbono y la dependencia
                             de combustibles fósiles. Cero emisiones durante la generación.</li>
@@ -969,7 +969,7 @@
                         <li>Versatilidad: Se pueden instalar en techos (inclinados/planos), suelo, fachadas, toldos,
                             etc.</li>
                     </ul>
-                    <h1><em>Desventajas y Consideraciones</em></h1>
+                    <h2><em>Desventajas y Consideraciones</em></h2>
                     <ul>
                         <li>Inversión Inicial Elevada: Aunque los precios han bajado mucho (un 80-90% en la última
                             década), sigue siendo una inversión significativa. Financiación y ayudas son clave.</li>
@@ -992,7 +992,7 @@
                             optimizadores mitigan esto.</li>
                     </ul>
                 </section id='Mitos'>
-                <h1><em>Mitos Comunes</em></h1>
+                <h2><em>Mitos Comunes</em></h2>
                 <ul>
                     <li>"No funciona cuando está nublado." FALSO. Genera menos, pero sigue funcionando con luz
                         difusa.</li>

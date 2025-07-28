@@ -370,26 +370,26 @@ background-color:var(--gris-claro);
 }
 #Eolica {
   text-align: center;
-  background-color: #6e8fdc;
+  
 }
 
 #Solar {
   text-align: center;
-  background-color: #6e8fdc;
+ 
 }
 
 #Mareomotriz {
   text-align: center;
-  background-color: #6e8fdc;
+  
 }
 #Geotermica{
    text-align: center;
-  background-color: #6e8fdc;
+  
 }
 
 #Biomasa{
    text-align: center;
-  background-color: #6e8fdc;
+  
 }
 #Eleccion{
   text-align: center;
@@ -397,7 +397,7 @@ background-color:var(--gris-claro);
 
 
 
-.ContenedorEnergiaSolar {
+#ContenedorEnergiaSolar {
       width: 100%;
       height: auto;
       background: linear-gradient(to right, white, transparent), url(IMG_PANEL_5.jpg) no-repeat right;
@@ -410,7 +410,7 @@ background-color:var(--gris-claro);
 
 
 
-.ContenedorEnergiaEolica{
+#ContenedorEnergiaEolica{
  width: 100%;
       height: auto;
       background: linear-gradient(to right, white 40%, transparent), url(IMG_EOLICA.jpeg) no-repeat right;
@@ -419,7 +419,7 @@ background-color:var(--gris-claro);
       align-items: center;
       justify-content: center;
 }
-.ContenedorEnergiaMareomotriz{
+#ContenedorEnergiaMareomotriz{
    width: 100%;
       height: auto;
       background: linear-gradient(to right, white 4%, transparent), url(IMG_MEREO.webp) no-repeat right;
@@ -429,7 +429,7 @@ background-color:var(--gris-claro);
       justify-content: center;
 }
 
-.ContenedorEnergiaGeotermica{
+#ContenedorEnergiaGeotermica{
  width: 100%;
       height: auto;
             background: linear-gradient(to right, white 4%, transparent), url(IMG_GEO2.jpg) no-repeat right;
@@ -438,7 +438,7 @@ background-color:var(--gris-claro);
       align-items: center;
       justify-content: center;
 }
-.ContenedorBiomasaHidroenergía{
+#ContenedorBiomasaHidroenergía{
  width: 100%;
       height: auto;
       background: linear-gradient(to right, white 40%, transparent), url(IMG_BIO.jpg) no-repeat right;
@@ -448,7 +448,7 @@ background-color:var(--gris-claro);
       justify-content: center;
 }
 
-.ContenedorPaneles{
+#ContenedorPaneles{
   background-color: silver;
 }
 
@@ -456,7 +456,6 @@ background-color:var(--gris-claro);
   margin-right: 40px;
   text-decoration: none;
   color: blue;
-  transition: background-color 10s;
 }
 
 
@@ -494,3 +493,14 @@ background-color:var(--gris-claro);
     #botonSubir:hover {
       background-color: var(--amarillo-solar);
     }
+
+
+
+.seccion {
+    display: none;
+  }
+
+  .seccion.activa {
+    display: block;
+  }
+
