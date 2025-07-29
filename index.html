@@ -356,459 +356,469 @@
                             <a href='#Biomasa'> 🌱 Biomasa e Hidroenergía</a>
                             <br>
                     </nav> -->
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary navbarF col-xs-12 col-md-12 col-lg-1" id="NabInfo">
-                        <div class="containerInfoEnergias">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li id="S" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Solar" onclick="mostrarSeccion('ContenedorEnergiaSolar')">
-                                            ☀️ Energía Solar
+                    <p>Estas energías son clave para un futuro más limpio, seguro y autosuficiente.</p>                    
+                    
+                </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2" style="padding:0">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary navbarF col-xs-12 col-md-12 col-lg-1" style="width:100%" id="NabInfo">
+                            <div class="containerInfoEnergias">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="menu navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                                        <li id="S" class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#Solar" onclick="mostrarSeccion('ContenedorEnergiaSolar')">
+                                                ☀️ Energía Solar
+                                            </a>
+                                        </li>
+                                        <li id="E" class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#Eolica" onclick="mostrarSeccion('ContenedorEnergiaEolica')">
+                                                💨 Energía Eólica
+                                        </li>
                                         </a>
+                                        <li id="M" class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#Mareomotriz" onclick="mostrarSeccion('ContenedorEnergiaMareomotriz')">
+                                                🌊 Energía Mareomotriz
+                                            </a>
+                                        </li>
+                                        <li id="G" class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#Geotermica" onclick="mostrarSeccion('ContenedorEnergiaGeotermica')">
+                                                🌋 Energía Geotérmica
+                                            </a>
+                                        </li>
+                                        <li id="B" class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#Biomasa" onclick="mostrarSeccion('ContenedorBiomasaHidroenergía')">
+                                                🌱 Biomasa e Hidroenergía
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-10" style="padding:0">
+                        <section>
+                            <div id='ContenedorEnergiaSolar' class="seccion activa">
+                                <h1 id='Solar'><em>Energía solar</em></h1>
+                                <h2>🌇 ¿Que es la energia Solar?</h2>
+                                <p>
+                                    La energía solar es una forma de energía renovable que se obtiene directamente del Sol. Es
+                                    una
+                                    de
+                                    las fuentes más limpias, abundantes y sostenibles que existen, y puede aprovecharse de
+                                    varias
+                                    maneras para generar electricidad, calor o incluso para procesos industriales.
+                                </p>
+                                <h2>☀️ ¿Cómo se aprovecha la energía solar?</h2>
+                                <p>Existen dos formas principales de utilizar la energía solar:</p>
+                                <ol>
+                                    <li>
+                                        <strong>Energía solar fotovoltaica</strong>
+                                        <ul>
+                                            <li>Convierte la luz solar directamente en electricidad mediante paneles solares
+                                                compuestos
+                                                por celdas fotovoltaicas.</li>
+                                            <li>Es ideal para hogares, edificios, granjas solares y sistemas autónomos.</li>
+                                        </ul>
                                     </li>
-                                    <li id="E" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Eolica" onclick="mostrarSeccion('ContenedorEnergiaEolica')">
-                                            💨 Energía Eólica
+                                    <li>
+                                        <strong>Energía solar térmica</strong>
+                                        <ul>
+                                            <li>Utiliza el calor del sol para calentar agua o aire.</li>
+                                            <li>Se emplea en calefacción, agua caliente sanitaria y procesos industriales.</li>
+                                        </ul>
                                     </li>
-                                    </a>
-                                    <li id="M" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Mareomotriz" onclick="mostrarSeccion('ContenedorEnergiaMareomotriz')">
-                                            🌊 Energía Mareomotriz
-                                        </a>
+                                    <li>
+                                        <strong>Energía solar concentrada</strong>
+                                        <ul>
+                                            <li>Utiliza espejos o lentes para concentrar la luz solar en un punto focal,
+                                                generando
+                                                calor
+                                                que se convierte en electricidad.</li>
+                                            <li>Es más adecuada para grandes instalaciones y plantas de energía solar.</li>
+                                        </ul>
+                                </ol>
+                                <h2>🌞 Ventajas de la Energía Solar</h2> <!-- POSIBLE CAMBIO DE VENTAJAS Y DESVENTAJAS  -->
+                                <ul>
+                                    <li>Inagotable: el Sol estará activo por miles de millones de años.</li>
+                                    <li>No contaminante: no emite gases de efecto invernadero.</li>
+                                    <li>Reducción de costos: una vez instalada, la energía es prácticamente gratuita.</li>
+                                    <li>Versátil: se puede usar en zonas rurales, urbanas, techos, campos, etc.</li>
+                                    <li>Bajo mantenimiento: los paneles solares requieren poco cuidado.</li>
+                                </ul>
+                                <h2>⚠️ Desventajas de la Energía Solar</h2>
+                                <ul>
+                                    <li>Intermitente: depende de la luz solar, por lo que no es constante durante la noche o en
+                                        días
+                                        nublados.</li>
+                                    <li>Requiere espacio: las instalaciones solares pueden necesitar grandes áreas para ser
+                                        efectivas.
                                     </li>
-                                    <li id="G" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Geotermica" onclick="mostrarSeccion('ContenedorEnergiaGeotermica')">
-                                            🌋 Energía Geotérmica
-                                        </a>
+                                    <li>Costos iniciales: aunque los precios han bajado, la instalación puede ser costosa.</li>
+                                    <li>Impacto ambiental: la producción de paneles solares puede generar residuos y emisiones.
                                     </li>
-                                    <li id="B" class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#Biomasa" onclick="mostrarSeccion('ContenedorBiomasaHidroenergía')">
-                                            🌱 Biomasa e Hidroenergía
-                                        </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div id='ContenedorEnergiaEolica' class="seccion">
+                                <h1 id='Eolica'><em>Energía Eólica</em></h1>
+                                <h2>🍃 ¿Que es la energia Eólica?</h2>
+                                <p>
+                                    La energía eólica es una forma de energía renovable que se obtiene del viento. Utiliza
+                                    aerogeneradores
+                                    para convertir la energía cinética del viento en electricidad. Es una de las fuentes de
+                                    energía
+                                    más
+                                    limpias y sostenibles, ya que no produce emisiones contaminantes durante su operación.
+                                </p>
+                                <h2>💨 ¿Cómo se aprovecha la energía eólica?</h2>
+                                <p>La energía eólica se aprovecha mediante aerogeneradores, que son grandes estructuras con
+                                    aspas
+                                    que
+                                    giran
+                                    cuando el viento sopla. Estos aerogeneradores pueden instalarse en tierra (onshore) o en el
+                                    mar
+                                    (offshore). El movimiento de las aspas hace girar un generador que produce electricidad.</p>
+                                <p>Es una de las fuentes de energía más limpias, sostenibles y de más rápido crecimiento en el
+                                    mundo.</p>
+                                <h2>⚙️ ¿Cómo Funciona la Energía Eólica?</h2>
+                                <ol>
+                                    <li>
+                                        <strong>Captación del viento:</strong>
+                                        <ul>
+                                            <li>El viento mueve las palas del aerogenerador, que están conectadas a un eje
+                                                central.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Conversión mecánica</strong>
+                                        <ul>
+                                            <li>El eje gira y transmite ese movimiento a un generador ubicado en la góndola
+                                                (parte
+                                                superior del molino).</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Generación de electricidad</strong>
+                                        <ul>
+                                            <li>El generador convierte la energía mecánica en energía eléctrica.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Transporte de energía</strong>
+                                        <ul>
+                                            <li>La electricidad generada se envía a la red eléctrica o se almacena en baterías.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🏭 Tipos de Energía Eólica</h2>
+                                <ol>
+                                    <li>
+                                        <strong>Eólica terrestre (onshore)</strong>
+                                        <ul>
+                                            <li>Se instala en tierra firme, en zonas con buen viento.</li>
+                                            <li>Más fácil de construir y mantener.</li>
+                                            <li>Menor costo que la marina.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Eólica marina (offshore)</strong>
+                                        <ul>
+                                            <li>Se instala en el mar, donde el viento es más constante y fuerte.</li>
+                                            <li>Mayor producción energética.</li>
+                                            <li>Costos más altos de instalación y mantenimiento.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🌍 Ventajas de la Energía Eólica</h2>
+                                <ul>
+                                    <li>Renovable e inagotable: el viento es una fuente natural constante.</li>
+                                    <li>No contamina: no emite gases de efecto invernadero ni residuos tóxicos.</li>
+                                    <li>Bajo costo operativo: una vez instalada, la energía es muy barata.</li>
+                                    <li>Compatible con la agricultura: los aerogeneradores pueden coexistir con cultivos o
+                                        ganado.
+                                    </li>
+                                    <li>Genera empleo: en instalación, mantenimiento y fabricación.</li>
+                                </ul>
+                                <h1>⚠️ Desventajas de la Energía Eólica</h1>
+                                <ul>
+                                    <li>Intermitente: depende de la velocidad y constancia del viento.</li>
+                                    <li>Impacto visual y sonoro: puede afectar paisajes y generar ruido.</li>
+                                    <li>Afecta a aves y murciélagos: riesgo de colisiones con las aspas.</li>
+                                    <li>Costos iniciales elevados: especialmente en proyectos offshore.</li>
+                                    <li>Requiere espacio: para evitar interferencias entre turbinas.</li>
+                                </ul>
+                                <h2>📊 Datos Curiosos y Relevantes</h2>
+                                <ul>
+                                    <li>Un solo aerogenerador moderno puede alimentar hasta 1.500 hogares.</li>
+                                    <li>Dinamarca, España y Alemania son líderes en energía eólica en Europa.</li>
+                                    <li>China y Estados Unidos tienen la mayor capacidad instalada del mundo.</li>
+                                    <li>La energía eólica puede combinarse con paneles solares para sistemas híbridos.</li>
+                                </ul>
+                        </section>
+                        <section>
+                            <div id='ContenedorEnergiaMareomotriz' class="seccion">
+                                <h1 id='Mareomotriz'><em>Energia Mareomotriz</em></h1>
+                                <h2>🌊 ¿Qué es la Energía Mareomotriz?</h2>
+                                <p>La energía mareomotriz es una forma de energía renovable que se obtiene del movimiento de las
+                                    mareas,
+                                    causado por la gravitación entre la Tierra, la Luna y el Sol. Esta energía aprovecha la
+                                    diferencia
+                                    de altura entre la marea alta y la marea baja para generar electricidad.</p>
+                                <p>Es una fuente limpia, predecible y sostenible, aunque aún poco explotada a nivel mundial
+                                    debido a
+                                    sus altos costos y limitaciones geográficas.
+                                </p>
+                                <h2>⚙️ ¿Cómo Funciona la Energía Mareomotriz?</h2>
+                                <p>Existen tres tecnologías principales para aprovechar la energía de las mareas:</p>
+                                <ol>
+                                    <li>
+                                        <strong>Presas o diques mareomotrices (barrages)</strong>
+                                        <ul>
+                                            <li>construyen en estuarios o bahías.</li>
+                                            <li>Funcionan como una represa: cuando sube la marea, el agua entra y se almacena;
+                                                cuando
+                                                baja, se libera pasando por turbinas que generan electricidad.</li>
+                                            <li>Ejemplo: La Rance (Francia), una de las plantas más conocidas.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Turbinas submarinas (corrientes de marea)</strong>
+                                        <ul>
+                                            <li>Se instalan en el fondo marino, como aerogeneradores submarinos.</li>
+                                            <li>Aprovechan las corrientes de marea para mover las turbinas.</li>
+                                            <li>Son menos invasivas que las presas.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Lagunas mareomotrices</strong>
+                                        <ul>
+                                            <li>Son áreas costeras artificiales que se llenan y vacían con las mareas.</li>
+                                            <li>Permiten generar energía sin bloquear completamente el flujo natural del agua.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🌍 Ventajas de la Energía Mareomotriz</h2>
+                                <ul>
+                                    <li>Renovable e inagotable: las mareas son un fenómeno natural constante.</li>
+                                    <li>Predecible: a diferencia del viento o el sol, las mareas siguen ciclos regulares.</li>
+                                    <li>Bajas emisiones: no produce gases contaminantes ni residuos tóxicos.</li>
+                                    <li>Alta densidad energética: el agua es mucho más densa que el aire, por lo que puede
+                                        generar
+                                        más
+                                        energía con menos velocidad de movimiento.</li>
+                                    <li>Larga vida útil: las infraestructuras mareomotrices pueden durar décadas.</li>
+                                </ul>
+                                <h2>⚠️ Desventajas de la Energía Mareomotriz</h2>
+                                <ul>
+                                    <li>Alto costo de inversión: la construcción de presas o turbinas submarinas es muy costosa.
+                                    </li>
+                                    <li>Impacto ambiental: puede alterar ecosistemas marinos y afectar la fauna local.</li>
+                                    <li>Limitaciones geográficas: solo es viable en zonas con grandes diferencias de marea
+                                        (mínimo 5
+                                        metros).</li>
+                                    <li>Tecnología en desarrollo: aún no está tan madura ni extendida como la solar o eólica.
+                                    </li>
+                                    <li>Mantenimiento complejo: las condiciones marinas pueden dañar los equipos y dificultar el
+                                        acceso.
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </nav>
-                    <p>Estas energías son clave para un futuro más limpio, seguro y autosuficiente.</p>
-                </div>
-            </section>
-            <section>
-                <div id='ContenedorEnergiaSolar' class="seccion activa">
-                    <h1 id='Solar'><em>Energía solar</em></h1>
-                    <h2>🌇 ¿Que es la energia Solar?</h2>
-                    <p>
-                        La energía solar es una forma de energía renovable que se obtiene directamente del Sol. Es
-                        una
-                        de
-                        las fuentes más limpias, abundantes y sostenibles que existen, y puede aprovecharse de
-                        varias
-                        maneras para generar electricidad, calor o incluso para procesos industriales.
-                    </p>
-                    <h2>☀️ ¿Cómo se aprovecha la energía solar?</h2>
-                    <p>Existen dos formas principales de utilizar la energía solar:</p>
-                    <ol>
-                        <li>
-                            <strong>Energía solar fotovoltaica</strong>
-                            <ul>
-                                <li>Convierte la luz solar directamente en electricidad mediante paneles solares
-                                    compuestos
-                                    por celdas fotovoltaicas.</li>
-                                <li>Es ideal para hogares, edificios, granjas solares y sistemas autónomos.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Energía solar térmica</strong>
-                            <ul>
-                                <li>Utiliza el calor del sol para calentar agua o aire.</li>
-                                <li>Se emplea en calefacción, agua caliente sanitaria y procesos industriales.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Energía solar concentrada</strong>
-                            <ul>
-                                <li>Utiliza espejos o lentes para concentrar la luz solar en un punto focal,
-                                    generando
-                                    calor
-                                    que se convierte en electricidad.</li>
-                                <li>Es más adecuada para grandes instalaciones y plantas de energía solar.</li>
-                            </ul>
-                    </ol>
-                    <h2>🌞 Ventajas de la Energía Solar</h2> <!-- POSIBLE CAMBIO DE VENTAJAS Y DESVENTAJAS  -->
-                    <ul>
-                        <li>Inagotable: el Sol estará activo por miles de millones de años.</li>
-                        <li>No contaminante: no emite gases de efecto invernadero.</li>
-                        <li>Reducción de costos: una vez instalada, la energía es prácticamente gratuita.</li>
-                        <li>Versátil: se puede usar en zonas rurales, urbanas, techos, campos, etc.</li>
-                        <li>Bajo mantenimiento: los paneles solares requieren poco cuidado.</li>
-                    </ul>
-                    <h2>⚠️ Desventajas de la Energía Solar</h2>
-                    <ul>
-                        <li>Intermitente: depende de la luz solar, por lo que no es constante durante la noche o en
-                            días
-                            nublados.</li>
-                        <li>Requiere espacio: las instalaciones solares pueden necesitar grandes áreas para ser
-                            efectivas.
-                        </li>
-                        <li>Costos iniciales: aunque los precios han bajado, la instalación puede ser costosa.</li>
-                        <li>Impacto ambiental: la producción de paneles solares puede generar residuos y emisiones.
-                        </li>
-                </div>
-            </section>
-            <section>
-                <div id='ContenedorEnergiaEolica' class="seccion">
-                    <h1 id='Eolica'><em>Energía Eólica</em></h1>
-                    <h2>🍃 ¿Que es la energia Eólica?</h2>
-                    <p>
-                        La energía eólica es una forma de energía renovable que se obtiene del viento. Utiliza
-                        aerogeneradores
-                        para convertir la energía cinética del viento en electricidad. Es una de las fuentes de
-                        energía
-                        más
-                        limpias y sostenibles, ya que no produce emisiones contaminantes durante su operación.
-                    </p>
-                    <h2>💨 ¿Cómo se aprovecha la energía eólica?</h2>
-                    <p>La energía eólica se aprovecha mediante aerogeneradores, que son grandes estructuras con
-                        aspas
-                        que
-                        giran
-                        cuando el viento sopla. Estos aerogeneradores pueden instalarse en tierra (onshore) o en el
-                        mar
-                        (offshore). El movimiento de las aspas hace girar un generador que produce electricidad.</p>
-                    <p>Es una de las fuentes de energía más limpias, sostenibles y de más rápido crecimiento en el
-                        mundo.</p>
-                    <h2>⚙️ ¿Cómo Funciona la Energía Eólica?</h2>
-                    <ol>
-                        <li>
-                            <strong>Captación del viento:</strong>
-                            <ul>
-                                <li>El viento mueve las palas del aerogenerador, que están conectadas a un eje
-                                    central.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Conversión mecánica</strong>
-                            <ul>
-                                <li>El eje gira y transmite ese movimiento a un generador ubicado en la góndola
-                                    (parte
-                                    superior del molino).</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Generación de electricidad</strong>
-                            <ul>
-                                <li>El generador convierte la energía mecánica en energía eléctrica.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Transporte de energía</strong>
-                            <ul>
-                                <li>La electricidad generada se envía a la red eléctrica o se almacena en baterías.
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🏭 Tipos de Energía Eólica</h2>
-                    <ol>
-                        <li>
-                            <strong>Eólica terrestre (onshore)</strong>
-                            <ul>
-                                <li>Se instala en tierra firme, en zonas con buen viento.</li>
-                                <li>Más fácil de construir y mantener.</li>
-                                <li>Menor costo que la marina.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Eólica marina (offshore)</strong>
-                            <ul>
-                                <li>Se instala en el mar, donde el viento es más constante y fuerte.</li>
-                                <li>Mayor producción energética.</li>
-                                <li>Costos más altos de instalación y mantenimiento.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🌍 Ventajas de la Energía Eólica</h2>
-                    <ul>
-                        <li>Renovable e inagotable: el viento es una fuente natural constante.</li>
-                        <li>No contamina: no emite gases de efecto invernadero ni residuos tóxicos.</li>
-                        <li>Bajo costo operativo: una vez instalada, la energía es muy barata.</li>
-                        <li>Compatible con la agricultura: los aerogeneradores pueden coexistir con cultivos o
-                            ganado.
-                        </li>
-                        <li>Genera empleo: en instalación, mantenimiento y fabricación.</li>
-                    </ul>
-                    <h1>⚠️ Desventajas de la Energía Eólica</h1>
-                    <ul>
-                        <li>Intermitente: depende de la velocidad y constancia del viento.</li>
-                        <li>Impacto visual y sonoro: puede afectar paisajes y generar ruido.</li>
-                        <li>Afecta a aves y murciélagos: riesgo de colisiones con las aspas.</li>
-                        <li>Costos iniciales elevados: especialmente en proyectos offshore.</li>
-                        <li>Requiere espacio: para evitar interferencias entre turbinas.</li>
-                    </ul>
-                    <h2>📊 Datos Curiosos y Relevantes</h2>
-                    <ul>
-                        <li>Un solo aerogenerador moderno puede alimentar hasta 1.500 hogares.</li>
-                        <li>Dinamarca, España y Alemania son líderes en energía eólica en Europa.</li>
-                        <li>China y Estados Unidos tienen la mayor capacidad instalada del mundo.</li>
-                        <li>La energía eólica puede combinarse con paneles solares para sistemas híbridos.</li>
-                    </ul>
-            </section>
-            <section>
-                <div id='ContenedorEnergiaMareomotriz' class="seccion">
-                    <h1 id='Mareomotriz'><em>Energia Mareomotriz</em></h1>
-                    <h2>🌊 ¿Qué es la Energía Mareomotriz?</h2>
-                    <p>La energía mareomotriz es una forma de energía renovable que se obtiene del movimiento de las
-                        mareas,
-                        causado por la gravitación entre la Tierra, la Luna y el Sol. Esta energía aprovecha la
-                        diferencia
-                        de altura entre la marea alta y la marea baja para generar electricidad.</p>
-                    <p>Es una fuente limpia, predecible y sostenible, aunque aún poco explotada a nivel mundial
-                        debido a
-                        sus altos costos y limitaciones geográficas.
-                    </p>
-                    <h2>⚙️ ¿Cómo Funciona la Energía Mareomotriz?</h2>
-                    <p>Existen tres tecnologías principales para aprovechar la energía de las mareas:</p>
-                    <ol>
-                        <li>
-                            <strong>Presas o diques mareomotrices (barrages)</strong>
-                            <ul>
-                                <li>construyen en estuarios o bahías.</li>
-                                <li>Funcionan como una represa: cuando sube la marea, el agua entra y se almacena;
-                                    cuando
-                                    baja, se libera pasando por turbinas que generan electricidad.</li>
-                                <li>Ejemplo: La Rance (Francia), una de las plantas más conocidas.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Turbinas submarinas (corrientes de marea)</strong>
-                            <ul>
-                                <li>Se instalan en el fondo marino, como aerogeneradores submarinos.</li>
-                                <li>Aprovechan las corrientes de marea para mover las turbinas.</li>
-                                <li>Son menos invasivas que las presas.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Lagunas mareomotrices</strong>
-                            <ul>
-                                <li>Son áreas costeras artificiales que se llenan y vacían con las mareas.</li>
-                                <li>Permiten generar energía sin bloquear completamente el flujo natural del agua.
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🌍 Ventajas de la Energía Mareomotriz</h2>
-                    <ul>
-                        <li>Renovable e inagotable: las mareas son un fenómeno natural constante.</li>
-                        <li>Predecible: a diferencia del viento o el sol, las mareas siguen ciclos regulares.</li>
-                        <li>Bajas emisiones: no produce gases contaminantes ni residuos tóxicos.</li>
-                        <li>Alta densidad energética: el agua es mucho más densa que el aire, por lo que puede
-                            generar
-                            más
-                            energía con menos velocidad de movimiento.</li>
-                        <li>Larga vida útil: las infraestructuras mareomotrices pueden durar décadas.</li>
-                    </ul>
-                    <h2>⚠️ Desventajas de la Energía Mareomotriz</h2>
-                    <ul>
-                        <li>Alto costo de inversión: la construcción de presas o turbinas submarinas es muy costosa.
-                        </li>
-                        <li>Impacto ambiental: puede alterar ecosistemas marinos y afectar la fauna local.</li>
-                        <li>Limitaciones geográficas: solo es viable en zonas con grandes diferencias de marea
-                            (mínimo 5
-                            metros).</li>
-                        <li>Tecnología en desarrollo: aún no está tan madura ni extendida como la solar o eólica.
-                        </li>
-                        <li>Mantenimiento complejo: las condiciones marinas pueden dañar los equipos y dificultar el
-                            acceso.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div id='ContenedorEnergiaGeotermica' class="seccion">
-                    <h1 id='Geotermica'><em>Energía Geotérmica</em></h1>
-                    <h2>🌋 ¿Qué es la Energía Geotérmica?</h2>
-                    <p>La energía geotérmica es una forma de energía renovable que se obtiene del calor interno de
-                        la
-                        Tierra. Este calor proviene del núcleo terrestre y se transmite hacia la superficie a través
-                        de
-                        rocas calientes, magma, aguas termales y géiseres.</p>
-                    <p>Se puede aprovechar para generar electricidad, calefacción o procesos industriales,
-                        dependiendo
-                        de la temperatura del recurso geotérmico.</p>
-                    <h2>⚙️ ¿Cómo Funciona la Energía Geotérmica?</h2>
-                    <p>El funcionamiento depende del tipo de recurso geotérmico, pero en general sigue estos pasos:
-                    </p>
-                    <ol>
-                        <li>
-                            <strong>Extracción del calor</strong>
-                            <ul>
-                                <li>Se perforan pozos para acceder a reservorios subterráneos de agua caliente o
-                                    vapor.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Conversión de energía</strong>
-                            <ul>
-                                <li>Si hay vapor, se dirige directamente a una turbina para generar electricidad.
-                                </li>
-                                <li>Si hay agua caliente, se puede usar para calefacción o para generar vapor
-                                    mediante
-                                    un intercambiador de calor.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Reinyección</strong>
-                            <ul>
-                                <li>El agua enfriada se reinyecta al subsuelo para mantener la presión del
-                                    reservorio y
-                                    hacerlo sostenible.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🔥 Tipos de Plantas Geotérmicas</h2>
-                    <ol>
-                        <li>
-                            <strong>Plantas de vapor seco</strong>
-                            <ul>
-                                <li>Usan vapor directamente del subsuelo para mover turbinas.</li>
-                                <li>Son las más antiguas y eficientes, pero requieren condiciones geológicas
-                                    específicas.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Plantas de vapor flash</strong>
-                            <ul>
-                                <li>Extraen agua caliente a alta presión, que al llegar a la superficie se convierte
-                                    en
-                                    vapor.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Plantas de ciclo binario</strong>
-                            <ul>
-                                <li>Usan un fluido secundario con bajo punto de ebullición para generar vapor.</li>
-                                <li>Funcionan con temperaturas más bajas (ideal para más ubicaciones).</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🏠 Usos de la Energía Geotérmica</h2>
-                    <ul>
-                        <li>Generación eléctrica (plantas geotérmicas).</li>
-                        <li>Calefacción de edificios (sistemas de calefacción distrital).</li>
-                        <li>Agua caliente sanitaria.</li>
-                        <li>Invernaderos y piscicultura.</li>
-                        <li>Procesos industriales (secado de alimentos, pasteurización, etc.).Bombas de calor
-                            geotérmicas para climatización residencial.</li>
-                        <li>Bombas de calor geotérmicas para climatización residencial.</li>
-                    </ul>
-                    <h2>🌍 Ventajas de la Energía Geotérmica</h2>
-                    <ul>
-                        <li>♻️ Renovable y sostenible: el calor terrestre es prácticamente inagotable.</li>
-                        <li>🌱 Bajas emisiones: muy poca contaminación ambiental.</li>
-                        <li>🕒 Constante: no depende del clima ni del día/noche.</li>
-                        <li>💰 Costos operativos bajos: una vez instalada, es muy económica.</li>
-                        <li>🏘️ Aplicable a pequeña y gran escala: desde casas hasta ciudades.</li>
-                    </ul>
-                    <h2>⚠️ Desventajas de la Energía Geotérmica</h2>
-                    <ul>
-                        <li>💸 Alto costo inicial: perforaciones profundas y estudios geológicos son costosos.</li>
-                        <li>🌋 Limitada geográficamente: solo viable en zonas con actividad geotérmica (volcanes,
-                            fallas).</li>
-                        <li>🧪 Riesgo de emisiones: puede liberar gases como sulfuro de hidrógeno o CO₂ si no se
-                            controla.</li>
-                        <li>🌊 Riesgo de agotamiento local: si no se gestiona bien, el reservorio puede enfriarse.
-                        </li>
-                        <li>🌍 Impacto sísmico: en algunos casos, la inyección de agua puede inducir sismos menores.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div id='ContenedorBiomasaHidroenergía' class="seccion">
-                    <h1 id='Biomasa'><em>Energia Biomasa e Hidroenergía</em></h1>
-                    <h2>🌱 ¿Qué es la Energía de Biomasa?</h2>
-                    <p>La energía de biomasa es una forma de energía renovable que se obtiene a partir de materia
-                        orgánica de origen vegetal o animal. Esta materia puede ser utilizada directamente como
-                        combustible o transformada en otros tipos de energía, como electricidad, calor o
-                        biocombustibles.</p>
-                    <p>La biomasa es una de las fuentes de energía más antiguas utilizadas por el ser humano (como
-                        la
-                        leña), pero hoy en día se aprovecha con tecnologías modernas y sostenibles.</p>
-                    <h2>🔄 ¿Cómo Funciona la Energía de Biomasa?</h2>
-                    <p>La biomasa puede transformarse en energía mediante varios procesos:</p>
-                    <ol>
-                        <li>
-                            <strong>Combustión directa</strong>
-                            <ul>
-                                <li>Se quema la biomasa (como madera, residuos agrícolas o pellets) para generar
-                                    calor o
-                                    electricidad.</li>
-                                <li>Muy común en calderas, estufas y plantas térmicas.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Gasificación</strong>
-                            <ul>
-                                <li>Se calienta la biomasa en un ambiente con poco oxígeno para producir un gas
-                                    combustible (gas de síntesis).</li>
-                                <li>Este gas puede usarse para generar electricidad o calor.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Pirólisis</strong>
-                            <ul>
-                                <li>Descomposición térmica de la biomasa sin oxígeno, generando bioaceite, carbón
-                                    vegetal y gases.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Digestión anaeróbica</strong>
-                            <ul>
-                                <li>Microorganismos descomponen la biomasa húmeda (como estiércol o residuos
-                                    orgánicos)
-                                    en ausencia de oxígeno, produciendo biogás (principalmente metano).</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Fermentación</strong>
-                            <ul>
-                                <li>Se transforma biomasa rica en azúcares (como caña de azúcar o maíz) en etanol,
-                                    un
-                                    biocombustible líquido.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h2>🌍 Ventajas de la Energía de Biomasa</h2>
-                    <ul>
-                        <li>♻️ Renovable: mientras se gestione de forma sostenible.</li>
-                        <li>🌱 Reduce residuos: aprovecha desechos agrícolas, forestales y urbanos.</li>
-                        <li>🌍 Bajas emisiones netas: el CO₂ liberado es compensado por el que absorben las plantas
-                            durante su crecimiento.</li>
-                        <li>🔋 Versátil: puede generar electricidad, calor o combustibles líquidos/gaseosos.</li>
-                        <li>🏘️ Desarrollo rural: fomenta empleo local y uso de recursos regionales.</li>
-                    </ul>
-                    <h2>⚠️ Desventajas de la Energía de Biomasa</h2>
-                    <ul>
-                        <li>🌫️ Emisiones contaminantes: si no se controla bien la combustión, puede liberar
-                            partículas
-                            y gases nocivos.</li>
-                        <li>🌾 Uso de tierras agrícolas: cultivos energéticos pueden competir con la producción de
-                            alimentos.</li>
-                        <li>💧 Alto consumo de agua: algunos procesos requieren grandes cantidades de agua.</li>
-                        <li>🚛 Costos logísticos: recolección, transporte y almacenamiento de biomasa pueden ser
-                            complejos.</li>
-                        <li>🔥 Riesgo de deforestación: si no se gestiona adecuadamente, puede llevar a la tala
-                            excesiva.</li>
-                    </ul>
+                        </section>
+                        <section>
+                            <div id='ContenedorEnergiaGeotermica' class="seccion">
+                                <h1 id='Geotermica'><em>Energía Geotérmica</em></h1>
+                                <h2>🌋 ¿Qué es la Energía Geotérmica?</h2>
+                                <p>La energía geotérmica es una forma de energía renovable que se obtiene del calor interno de
+                                    la
+                                    Tierra. Este calor proviene del núcleo terrestre y se transmite hacia la superficie a través
+                                    de
+                                    rocas calientes, magma, aguas termales y géiseres.</p>
+                                <p>Se puede aprovechar para generar electricidad, calefacción o procesos industriales,
+                                    dependiendo
+                                    de la temperatura del recurso geotérmico.</p>
+                                <h2>⚙️ ¿Cómo Funciona la Energía Geotérmica?</h2>
+                                <p>El funcionamiento depende del tipo de recurso geotérmico, pero en general sigue estos pasos:
+                                </p>
+                                <ol>
+                                    <li>
+                                        <strong>Extracción del calor</strong>
+                                        <ul>
+                                            <li>Se perforan pozos para acceder a reservorios subterráneos de agua caliente o
+                                                vapor.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Conversión de energía</strong>
+                                        <ul>
+                                            <li>Si hay vapor, se dirige directamente a una turbina para generar electricidad.
+                                            </li>
+                                            <li>Si hay agua caliente, se puede usar para calefacción o para generar vapor
+                                                mediante
+                                                un intercambiador de calor.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Reinyección</strong>
+                                        <ul>
+                                            <li>El agua enfriada se reinyecta al subsuelo para mantener la presión del
+                                                reservorio y
+                                                hacerlo sostenible.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🔥 Tipos de Plantas Geotérmicas</h2>
+                                <ol>
+                                    <li>
+                                        <strong>Plantas de vapor seco</strong>
+                                        <ul>
+                                            <li>Usan vapor directamente del subsuelo para mover turbinas.</li>
+                                            <li>Son las más antiguas y eficientes, pero requieren condiciones geológicas
+                                                específicas.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Plantas de vapor flash</strong>
+                                        <ul>
+                                            <li>Extraen agua caliente a alta presión, que al llegar a la superficie se convierte
+                                                en
+                                                vapor.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Plantas de ciclo binario</strong>
+                                        <ul>
+                                            <li>Usan un fluido secundario con bajo punto de ebullición para generar vapor.</li>
+                                            <li>Funcionan con temperaturas más bajas (ideal para más ubicaciones).</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🏠 Usos de la Energía Geotérmica</h2>
+                                <ul>
+                                    <li>Generación eléctrica (plantas geotérmicas).</li>
+                                    <li>Calefacción de edificios (sistemas de calefacción distrital).</li>
+                                    <li>Agua caliente sanitaria.</li>
+                                    <li>Invernaderos y piscicultura.</li>
+                                    <li>Procesos industriales (secado de alimentos, pasteurización, etc.).Bombas de calor
+                                        geotérmicas para climatización residencial.</li>
+                                    <li>Bombas de calor geotérmicas para climatización residencial.</li>
+                                </ul>
+                                <h2>🌍 Ventajas de la Energía Geotérmica</h2>
+                                <ul>
+                                    <li>♻️ Renovable y sostenible: el calor terrestre es prácticamente inagotable.</li>
+                                    <li>🌱 Bajas emisiones: muy poca contaminación ambiental.</li>
+                                    <li>🕒 Constante: no depende del clima ni del día/noche.</li>
+                                    <li>💰 Costos operativos bajos: una vez instalada, es muy económica.</li>
+                                    <li>🏘️ Aplicable a pequeña y gran escala: desde casas hasta ciudades.</li>
+                                </ul>
+                                <h2>⚠️ Desventajas de la Energía Geotérmica</h2>
+                                <ul>
+                                    <li>💸 Alto costo inicial: perforaciones profundas y estudios geológicos son costosos.</li>
+                                    <li>🌋 Limitada geográficamente: solo viable en zonas con actividad geotérmica (volcanes,
+                                        fallas).</li>
+                                    <li>🧪 Riesgo de emisiones: puede liberar gases como sulfuro de hidrógeno o CO₂ si no se
+                                        controla.</li>
+                                    <li>🌊 Riesgo de agotamiento local: si no se gestiona bien, el reservorio puede enfriarse.
+                                    </li>
+                                    <li>🌍 Impacto sísmico: en algunos casos, la inyección de agua puede inducir sismos menores.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div id='ContenedorBiomasaHidroenergía' class="seccion">
+                                <h1 id='Biomasa'><em>Energia Biomasa e Hidroenergía</em></h1>
+                                <h2>🌱 ¿Qué es la Energía de Biomasa?</h2>
+                                <p>La energía de biomasa es una forma de energía renovable que se obtiene a partir de materia
+                                    orgánica de origen vegetal o animal. Esta materia puede ser utilizada directamente como
+                                    combustible o transformada en otros tipos de energía, como electricidad, calor o
+                                    biocombustibles.</p>
+                                <p>La biomasa es una de las fuentes de energía más antiguas utilizadas por el ser humano (como
+                                    la
+                                    leña), pero hoy en día se aprovecha con tecnologías modernas y sostenibles.</p>
+                                <h2>🔄 ¿Cómo Funciona la Energía de Biomasa?</h2>
+                                <p>La biomasa puede transformarse en energía mediante varios procesos:</p>
+                                <ol>
+                                    <li>
+                                        <strong>Combustión directa</strong>
+                                        <ul>
+                                            <li>Se quema la biomasa (como madera, residuos agrícolas o pellets) para generar
+                                                calor o
+                                                electricidad.</li>
+                                            <li>Muy común en calderas, estufas y plantas térmicas.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Gasificación</strong>
+                                        <ul>
+                                            <li>Se calienta la biomasa en un ambiente con poco oxígeno para producir un gas
+                                                combustible (gas de síntesis).</li>
+                                            <li>Este gas puede usarse para generar electricidad o calor.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Pirólisis</strong>
+                                        <ul>
+                                            <li>Descomposición térmica de la biomasa sin oxígeno, generando bioaceite, carbón
+                                                vegetal y gases.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Digestión anaeróbica</strong>
+                                        <ul>
+                                            <li>Microorganismos descomponen la biomasa húmeda (como estiércol o residuos
+                                                orgánicos)
+                                                en ausencia de oxígeno, produciendo biogás (principalmente metano).</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Fermentación</strong>
+                                        <ul>
+                                            <li>Se transforma biomasa rica en azúcares (como caña de azúcar o maíz) en etanol,
+                                                un
+                                                biocombustible líquido.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h2>🌍 Ventajas de la Energía de Biomasa</h2>
+                                <ul>
+                                    <li>♻️ Renovable: mientras se gestione de forma sostenible.</li>
+                                    <li>🌱 Reduce residuos: aprovecha desechos agrícolas, forestales y urbanos.</li>
+                                    <li>🌍 Bajas emisiones netas: el CO₂ liberado es compensado por el que absorben las plantas
+                                        durante su crecimiento.</li>
+                                    <li>🔋 Versátil: puede generar electricidad, calor o combustibles líquidos/gaseosos.</li>
+                                    <li>🏘️ Desarrollo rural: fomenta empleo local y uso de recursos regionales.</li>
+                                </ul>
+                                <h2>⚠️ Desventajas de la Energía de Biomasa</h2>
+                                <ul>
+                                    <li>🌫️ Emisiones contaminantes: si no se controla bien la combustión, puede liberar
+                                        partículas
+                                        y gases nocivos.</li>
+                                    <li>🌾 Uso de tierras agrícolas: cultivos energéticos pueden competir con la producción de
+                                        alimentos.</li>
+                                    <li>💧 Alto consumo de agua: algunos procesos requieren grandes cantidades de agua.</li>
+                                    <li>🚛 Costos logísticos: recolección, transporte y almacenamiento de biomasa pueden ser
+                                        complejos.</li>
+                                    <li>🔥 Riesgo de deforestación: si no se gestiona adecuadamente, puede llevar a la tala
+                                        excesiva.</li>
+                                </ul>
 
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </section>
+            </div>
+
         </div>
         <div class='ContenedorPaneles'>
             <h1 style="text-align: center;">Paneles Solares</h1>
