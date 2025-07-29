@@ -1,0 +1,6 @@
+Host github-sunova
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/bootcamp_key
+  IdentitiesOnly yes
+

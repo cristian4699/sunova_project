@@ -467,3 +467,33 @@ background-color:var(--gris-claro);
     color:var(--amarillo-solar);
     cursor:pointer;
 }
+
+
+/* Estilos para seccion de graficas */
+
+    h1 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .chart-section {
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .chart-section h2 {
+            text-align: center;
+            color: #34495e;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        canvas {
+            width: 100% !important;
+            height: 400px !important; /* Altura fija para todos los gráficos */
+        }
+/* ----------------------------------------------------- */

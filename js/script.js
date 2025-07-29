@@ -45,7 +45,91 @@ stadistics_button.addEventListener("click", function () {
 });
 
 about_button.addEventListener("click", function () {
-    alert("Boton history presionado");
+    document.getElementById("main-container").innerHTML = "";
+
+  const plantilla = document.getElementById("graphic-section");
+
+  // Clonar el contenido de la plantilla
+  const clon = plantilla.content.cloneNode(true);
+
+  // Insertar el contenido clonado en el contenedor
+  document.getElementById("main-container").appendChild(clon);
+
+  createChartFromCSV(
+                '01_renewable-share-energy.csv', 
+                'renewableShareChart', 
+                'Participación de Energías Renovables', 
+                ['Renewables (% equivalent primary energy)'], 
+                '%', 
+                true
+            );
+
+            createChartFromCSV(
+                '04_share-electricity-renewables.csv', 
+                'electricityRenewableShareChart', 
+                'Participación de Renovables en Electricidad', 
+                ['Renewables (% electricity)'], 
+                '%', 
+                true
+            );
+
+            createChartFromCSV(
+                '14_solar-share-energy.csv', 
+                'solarShareChart', 
+                'Participación de la Energía Solar', 
+                ['Solar (% equivalent primary energy)'], 
+                '%', 
+                true
+            );
+            
+            createChartFromCSV(
+                '15_share-electricity-solar.csv', 
+                'electricitySolarShareChart', 
+                'Participación de Energía Solar en Electricidad', 
+                ['Solar (% electricity)'], 
+                '%', 
+                true
+            );
+
+            createChartFromCSV(
+                '12_solar-energy-consumption.csv', 
+                'solarConsumptionChart', 
+                'Consumo de Electricidad Solar', 
+                ['Electricity from solar (TWh)'], 
+                ' TWh', 
+                false
+            );
+
+            createChartFromCSV(
+                '02_modern-renewable-energy-consumption.csv', 
+                'modernRenewableConsumptionChart', 
+                'Consumo de Energías Renovables Modernas', 
+                [
+                    'Geo Biomass Other - TWh',
+                    'Solar Generation - TWh',
+                    'Wind Generation - TWh',
+                    'Hydro Generation - TWh'
+                ], 
+                ' TWh', 
+                false
+            );
+
+            createChartFromCSV(
+                '03_modern-renewable-prod.csv', 
+                'modernRenewableProductionChart', 
+                'Producción de Electricidad Renovable Moderna', 
+                [
+                    'Electricity from wind (TWh)',
+                    'Electricity from hydro (TWh)',
+                    'Electricity from solar (TWh)',
+                    'Other renewables including bioenergy (TWh)'
+                ], 
+                ' TWh', 
+                false
+            );
+
+
+  
 });
 
 store_button.addEventListener("click", function () {
@@ -77,3 +161,168 @@ login_button.addEventListener("click", function () {
   document.getElementById("main-container").appendChild(clon);
 
 /* ----------------------  ------------------ ----------------*/
+
+/* Codigo para la seccion de Javascript para las graficas */
+  console.log("1");
+     // Función para generar un color aleatorio (con ciclo para no repetir colores demasiado pronto)
+        const colors = [
+            'rgba(75, 192, 192, 1)', // Teal
+            'rgba(255, 99, 132, 1)', // Red
+            'rgba(54, 162, 235, 1)', // Blue
+            'rgba(255, 206, 86, 1)', // Yellow
+            'rgba(153, 102, 255, 1)',// Purple
+            'rgba(255, 159, 64, 1)', // Orange
+            'rgba(199, 199, 199, 1)',// Grey
+            'rgba(83, 222, 185, 1)', // Mint
+            'rgba(235, 78, 117, 1)', // Rose
+            'rgba(100, 149, 237, 1)',// CornflowerBlue
+            'rgba(255, 218, 185, 1)',// Peach
+            'rgba(189, 183, 107, 1)',// DarkKhaki
+            'rgba(124, 252, 0, 1)',  // LawnGreen
+            'rgba(255, 0, 255, 1)',  // Magenta
+            'rgba(0, 255, 255, 1)'   // Cyan
+        ];
+        let colorIndex = 0;
+        function getNextLineColor() {
+            const color = colors[colorIndex % colors.length];
+            colorIndex++;
+            return color;
+        }
+console.log("2");
+        /**
+         * Función genérica para cargar un CSV y crear un gráfico de línea.
+         * @param {string} filePath - La ruta al archivo CSV.
+         * @param {string} canvasId - El ID del elemento <canvas> donde se dibujará el gráfico.
+         * @param {string} mainLabel - La etiqueta principal para el dataset (o para el eje Y si hay múltiples).
+         * @param {string[]} dataKeys - Array de las claves de las columnas de datos a graficar (ej. ['Solar (% equivalent primary energy)']).
+         * @param {string} unit - Unidad para el eje Y (ej. '%', 'TWh').
+         * @param {boolean} isPercentage - True si el valor debe ser un porcentaje (para el formato del tooltip).
+         * @param {string} chartType - Tipo de gráfico ('line' o 'bar').
+         */
+        console.log("3");
+        async function createChartFromCSV(filePath, canvasId, mainLabel, dataKeys, unit, isPercentage = false, chartType = 'line') {
+          console.log("4");
+            try {
+              console.log("5");
+              console.log(filePath);
+                const response = await fetch(filePath);
+                const csvText = await response.text();
+
+                Papa.parse(csvText, {
+                    header: true,
+                    dynamicTyping: true,
+                    complete: function(results) {
+                        const rawData = results.data.filter(row => 
+                            row.Entity === 'Colombia' && // Asegurarse de que es Colombia
+                            typeof row.Year === 'number' &&
+                            dataKeys.every(key => typeof row[key] === 'number' || row[key] === null) // Asegurar que las claves de datos son números o nulas
+                        );
+
+                        rawData.sort((a, b) => a.Year - b.Year); // Ordenar por año
+
+                        const labels = rawData.map(row => row.Year);
+                        const datasets = [];
+
+                        colorIndex = 0; // Reiniciar el índice de color para cada nuevo gráfico
+
+                        dataKeys.forEach(key => {
+                            const data = rawData.map(row => row[key]);
+                            const lineColor = getNextLineColor();
+                            datasets.push({
+                                label: key, // La clave de la columna será la etiqueta de la leyenda
+                                data: data,
+                                borderColor: lineColor,
+                                backgroundColor: lineColor.replace('1)', '0.2)'), // Un color de fondo más claro
+                                borderWidth: 2,
+                                fill: false, // Importante para líneas
+                                tension: 0.1,
+                                pointRadius: 3, // Tamaño de los puntos
+                                hidden: false // Por defecto visible
+                            });
+                        });
+                        
+                        const ctx = document.getElementById(canvasId).getContext('2d');
+                        new Chart(ctx, {
+                            type: chartType,
+                            data: {
+                                labels: labels,
+                                datasets: datasets
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        display: datasets.length > 1, // Mostrar leyenda solo si hay múltiples datasets
+                                        position: 'top',
+                                        labels: {
+                                            boxWidth: 20,
+                                            padding: 15
+                                        }
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: mainLabel // Título del gráfico
+                                    },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                let value = context.parsed.y;
+                                                if (value !== null) {
+                                                    label += value.toFixed(4) + (isPercentage ? '%' : unit);
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: {
+                                        title: {
+                                            display: true,
+                                            text: 'Año'
+                                        },
+                                        grid: {
+                                            display: false // Ocultar líneas de la cuadrícula vertical
+                                        },
+                                        ticks: {
+                                            autoSkip: true,
+                                            maxTicksLimit: 20
+                                        }
+                                    },
+                                    y: {
+                                        beginAtZero: true,
+                                        title: {
+                                            display: true,
+                                            text: mainLabel.includes('Participación') ? mainLabel.split('(')[0].trim() + ' (' + unit + ')' : mainLabel + ' (' + unit + ')'
+                                        },
+                                        ticks: {
+                                            callback: function(value) {
+                                                return value + (isPercentage ? '%' : unit);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    },
+                    error: function(error) {
+                        console.error(`Error al parsear CSV ${filePath} con Papa Parse:`, error);
+                    }
+                });
+
+            } catch (error) {
+                console.error(`Error al cargar o procesar el CSV ${filePath}:`, error);
+            }
+        }
+        console.log("6");
+
+        // Llamadas para crear cada gráfico
+        // Asegúrate de que los nombres de las columnas en dataKeys coincidan exactamente con tu CSV
+        document.addEventListener('DOMContentLoaded', () => {
+            
+        });
