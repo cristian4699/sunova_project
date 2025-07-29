@@ -240,13 +240,61 @@
     </template>
 
     <template id="information-section">
-
-        <div class='ContenedorDecadas'>
+        <div id="InicioInfo" class="seccion activa">
+   
             
-            <h1 style="text-align: center;">Historia de las Energías</h1>  <!-- Primera opcion(seccion) la historia -->
+<!-- Contenedor principal -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">¿Qué deseas ver?</h1>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <a href="#Decadas" class="card-link" onclick="mostrarSeccion('ContenedorDecadas')">
+          <div class="card shadow">
+            <img src="img/FT HISTORIA DE LAS ENERGIAS.jpeg" class="card-img-top" alt="Decadas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Historia por Decadas</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4">
+        <a href="#EnergiasRenovables" class="card-link"onclick="mostrarClase('ContenedorEnergiasRenovables')">
+          <div class="card shadow">
+            <img src="img/FT ENERGIAS.jpeg" class="card-img-top" alt="EnergiasRenovables">
+            <div class="card-body text-center">
+              <h5 class="card-title">Energias Renovables</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4">
+        <a href="#Paneles" class="card-link" onclick="mostrarSeccion('ContenedorPaneles')">
+          <div class="card shadow">
+            <img src="img/FT PANELES.jpg" class="card-img-top" alt="Paneles">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paneles</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+        </div>
+
+        <div id="ContenedorDecadas" class="seccion">
+            <h1 id="Decadas" style="text-align: center;">Historia de las Energías</h1>  <!-- Primera opcion(seccion) la historia -->
             <br>
-            <section id='DEC1' class="seccion">
-                <h1><em>Década de 1960–1970</em>: Los primeros pasos modernos</h1>
+            <section id='DEC1'>
+                <h2><em>Década de 1960–1970</em>: Los primeros pasos modernos </h2>
                 <p>
                 <ul>
                     <li> Energía solar: En la década de 1960, las células fotovoltaicas de silicio monocristalino
@@ -269,7 +317,7 @@
                 </p>
             </section>
             <section id='DEC2'>
-                <h1><em>Década de 1980–1990</em>: Crisis y avances tecnológicos</h1>
+                <h2><em>Década de 1980–1990</em>: Crisis y avances tecnológicos</h2>
                 <p>
                 <ul>
                     <li> Crisis energéticas: La dependencia de los combustibles fósiles y las crisis petroleras de
@@ -290,7 +338,7 @@
                 </p>
             </section>
             <section id='DEC3'>
-                <h1><em>Década de 2000–2010</em>: Crecimiento y competitividad</h1>
+                <h2><em>Década de 2000–2010</em>: Crecimiento y competitividad</h2>
                 <p>
                 <ul>
                     <li> Expansión eólica y solar: La capacidad instalada de energía eólica y solar creció
@@ -310,7 +358,7 @@
                 </p>
             </section>
             <section id='DEC4'>
-                <h1><em>Década de 2015–2022</em> Dominio de las renovables y transición energética</h1>
+                <h2><em>Década de 2015–2022</em> Dominio de las renovables y transición energética</h2>
                 <p>
                 <ul>
                     <li> Inversión récord: En 2023, la inversión global en energías renovables superó los 545.000
@@ -329,8 +377,9 @@
                 </ul>
                 </p>
             </section>
+
         </div>
-        <div class='ContenedorEnergiasRenovables'>
+        <div id='ContenedorEnergiasRenovables' class="clase">
             <h1>Energias renovables</h1>
             <!-- Segunda opcion(seccion) decir y explicar las 5 energias renovables -->
             </header>
@@ -398,7 +447,7 @@
                 </div>
             </section>
             <section>
-                <div id='ContenedorEnergiaSolar' class="seccion activa">
+                <div id='ContenedorEnergiaSolar' class="seccion">
                     <h1 id='Solar'><em>Energía solar</em></h1>
                     <h2>🌇 ¿Que es la energia Solar?</h2>
                     <p>
@@ -810,7 +859,7 @@
                 </div>
             </section>
         </div>
-        <div class='ContenedorPaneles'>
+        <div id='ContenedorPaneles' class="seccion" href="#Paneles">
             <h1 style="text-align: center;">Paneles Solares</h1>
             <br>
             <section id='QueSon'>
@@ -820,6 +869,7 @@
                     solar,
                     una fuente limpia, renovable e inagotable.</p>
                 <h3>Proceso Básico:</h3>
+                <img id="FTPANEL1" src="img/como-funcionan-los-paneles-solares.webp" alt="Como funcionan los paneles">
                 <ol>
                     <li>Los fotones de la luz solar impactan sobre las células solares (generalmente de silicio).
                     </li>
@@ -880,6 +930,7 @@
                     <strong>
                         <h4>Paneles Monocristalinos (TOPCon)</h4>
                     </strong>
+                    <img id="FTMONOCRISTALINO" src="img/panel monocristalinos.png" alt="Panel monocristalino">
                     <p>Panel monocristalino negro con celdas uniformes
                         El más eficiente del mercado (2025)</p>
                     <ul>
@@ -897,6 +948,8 @@
                     <strong>
                         <h4>Paneles Policristalinos</h4>
                     </strong>
+                    <img id="FTPOLICRISTALINO" src="img/panel policristalinos.webp" alt="Panel policristalinos">
+                    <br>
                     <p>Panel policristalino azul con celdas cuadradas
                         La opción económica</p>
                     <ul>
@@ -911,9 +964,12 @@
                         </ul>
                     </ul>
                     <br>
+                    <br>
+                    <br>
                     <strong>
                         <h4>Paneles de Capa Fina</h4>
                     </strong>
+                    <img id="FTCAPAFINA" src="img/panel capa fina.png" alt="Panel capa fina">
                     <p>Panel delgado y flexible de color oscuro
                         Flexibilidad y diseño integrado</p>
                     <ul>

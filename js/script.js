@@ -92,3 +92,5 @@ document.getElementById("botonSubir").addEventListener("click", function () {
 
   // Opcional: mostrar una sección por defecto al cargar
 /*   window.onload = () => mostrarSeccion('inicio'); */
+
+/* ---------- OCULTAR SECCIONES DENTRO DEL NAVBAR----------------- */
