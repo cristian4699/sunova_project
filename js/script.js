@@ -5,6 +5,26 @@ let stadistics_button = document.getElementById("stadistics_button");
 let about_button = document.getElementById("about_button");
 let store_button = document.getElementById("store_button");
 let login_button = document.getElementById("login_button");
+console.log("1");
+
+
+window.addEventListener("load", (event) => {
+    let load_store = document.getElementById("load_button");
+    
+    load_store.addEventListener("click", function () {
+    console.log("2");
+    document.getElementById("main-container").innerHTML = "";
+
+    const plantilla = document.getElementById("store-section");
+
+    // Clonar el contenido de la plantilla
+    const clon = plantilla.content.cloneNode(true);
+
+    // Insertar el contenido clonado en el contenedor
+    document.getElementById("main-container").appendChild(clon);
+    });
+});
+
 
 home_button.addEventListener("click", function () {
   document.getElementById("main-container").innerHTML = "";
@@ -350,3 +370,6 @@ document.getElementById("botonSubir").addEventListener("click", function () {
 /*   window.onload = () => mostrarSeccion('inicio'); */
 
 /* ---------- OCULTAR SECCIONES DENTRO DEL NAVBAR----------------- */
+
+
+
