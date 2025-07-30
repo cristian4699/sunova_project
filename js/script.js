@@ -5,14 +5,12 @@ let stadistics_button = document.getElementById("stadistics_button");
 let about_button = document.getElementById("about_button");
 let store_button = document.getElementById("store_button");
 let login_button = document.getElementById("login_button");
-console.log("1");
 
 
 window.addEventListener("load", (event) => {
     let load_store = document.getElementById("load_button");
     
     load_store.addEventListener("click", function () {
-    console.log("2");
     document.getElementById("main-container").innerHTML = "";
 
     const plantilla = document.getElementById("store-section");
@@ -61,6 +59,45 @@ stadistics_button.addEventListener("click", function () {
 
   // Insertar el contenido clonado en el contenedor
   document.getElementById("main-container").appendChild(clon);
+
+/* Cargando formulario */
+
+document.getElementById("formularioEnergia").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let anio = parseInt(document.getElementById("anio").value);
+    let consumo = parseFloat(document.getElementById("consumoTotal").value);
+
+    // Usar fetch para obtener el JSON de Colombia
+    fetch('js/colombia.json')
+      .then(response => response.json())
+      .then(data => {
+        // Buscar el año ingresado
+        let registro = data.find(d => d.Year === anio);
+
+        if (registro) {
+          let porcentajeRenovable = registro["Renewables (% equivalent primary energy)"];
+          let consumoRenovable = (porcentajeRenovable / 100) * consumo;
+
+          let resultado = `
+            En Colombia en ${anio}, el ${porcentajeRenovable.toFixed(2)}% de la energía fue renovable.<br>
+            Si consumiste ${consumo.toFixed(2)} kWh, entonces ${consumoRenovable.toFixed(2)} kWh provienen de fuentes limpias.
+          `;
+          document.getElementById("resultado").innerHTML = resultado;
+        } else {
+          document.getElementById("resultado").innerHTML = `No hay datos para el año ${anio}.`;
+        }
+      })
+      .catch(error => {
+        console.error('Error al cargar los datos:', error);
+        document.getElementById("resultado").innerHTML = "Ocurrió un error al cargar los datos.";
+      });
+  });
+
+
+
+
+
 });
 
 about_button.addEventListener("click", function () {
@@ -182,7 +219,6 @@ login_button.addEventListener("click", function () {
 /* ----------------------  ------------------ ----------------*/
 
 /* Codigo para la seccion de Javascript para las graficas */
-  console.log("1");
      // Función para generar un color aleatorio (con ciclo para no repetir colores demasiado pronto)
         const colors = [
             'rgba(75, 192, 192, 1)', // Teal
@@ -207,7 +243,6 @@ login_button.addEventListener("click", function () {
             colorIndex++;
             return color;
         }
-console.log("2");
         /**
          * Función genérica para cargar un CSV y crear un gráfico de línea.
          * @param {string} filePath - La ruta al archivo CSV.
@@ -218,13 +253,9 @@ console.log("2");
          * @param {boolean} isPercentage - True si el valor debe ser un porcentaje (para el formato del tooltip).
          * @param {string} chartType - Tipo de gráfico ('line' o 'bar').
          */
-        console.log("3");
         async function createChartFromCSV(filePath, canvasId, mainLabel, dataKeys, unit, isPercentage = false, chartType = 'line') {
-          console.log("4");
             try {
-              console.log("5");
-              console.log(filePath);
-                const response = await fetch(filePath);
+                const response = await fetch('../assets/' + filePath);
                 const csvText = await response.text();
 
                 Papa.parse(csvText, {
@@ -338,7 +369,6 @@ console.log("2");
                 console.error(`Error al cargar o procesar el CSV ${filePath}:`, error);
             }
         }
-        console.log("6");
 
         // Llamadas para crear cada gráfico
         // Asegúrate de que los nombres de las columnas en dataKeys coincidan exactamente con tu CSV

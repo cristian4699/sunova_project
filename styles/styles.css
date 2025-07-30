@@ -40,6 +40,8 @@ body {
 
 header {
   border-top: 5px solid var(--amarillo-solar);
+  position: sticky;
+  top: 0;
 }
 
 .layout-container {
@@ -123,6 +125,10 @@ header {
   color: var(--blanco) !important;
   font-weight: bold;
   cursor: pointer;
+}
+
+.main-container{
+  scroll-margin-top: 145px;
 }
 
 /* Sección Hero */
@@ -245,10 +251,13 @@ header {
 /* Footer */
 footer {
   background-color: var(--amarillo-solar);
+  bottom: 0;
   color: var(--blanco);
   display: grid;
   height: 5vh;
   place-items: center;
+  position: fixed;
+  width: 100%;
   /* padding: 40px 20px; */
 }
 
@@ -511,7 +520,7 @@ background-color: white;
 
 #botonSubir {
       position: fixed;
-      bottom: 20px;
+      bottom: 40px;
       right: 20px;
       padding: 10px 15px;
       font-size: 16px;
