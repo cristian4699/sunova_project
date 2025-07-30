@@ -360,12 +360,19 @@ text-align: left;
 }  */
  
 #ContenedorDecadas {
-    background-color:var(--gris-claro);
+    /* background-color:var(--gris-claro); */
+    background-color: white;
 }
 #ContenedorEnergiasRenovables{
-background-color:var(--gris-claro);
+/* background-color:var(--gris-claro); */
+background-color: white;
 /* >>>>>>> information */
 }
+
+#EnergiasRenovables{
+      text-align: center;
+}
+
 #Eolica {
   text-align: center;
   
@@ -496,6 +503,7 @@ background-color:var(--gris-claro);
 
 .seccion {
     display: none;
+    background-color: white;
   }
 
   .seccion.activa {
