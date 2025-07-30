@@ -19,16 +19,15 @@ home_button.addEventListener("click", function () {
 });
 
 history_button.addEventListener("click", function () {
-
     document.getElementById("main-container").innerHTML = "";
 
-  const plantilla = document.getElementById("information-section");
+    const plantilla = document.getElementById("information-section");
 
-  // Clonar el contenido de la plantilla
-  const clon = plantilla.content.cloneNode(true);
+    // Clonar el contenido de la plantilla
+    const clon = plantilla.content.cloneNode(true);
 
-  // Insertar el contenido clonado en el contenedor
-  document.getElementById("main-container").appendChild(clon);
+    // Insertar el contenido clonado en el contenedor
+    document.getElementById("main-container").appendChild(clon);
 });
 
 
@@ -326,3 +325,28 @@ console.log("2");
         document.addEventListener('DOMContentLoaded', () => {
             
         });
+/* -------------ACA ES EL BOTON DE SUBIR------------------- */
+
+// Función para subir al inicio
+document.getElementById("botonSubir").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+/* --------- PRUEBA DE SCRIPT DE OCULTAR SECCIONES--------------- */
+ 
+      function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('activa');
+      });
+      document.getElementById(id).classList.add('activa');
+    }
+
+
+  // Opcional: mostrar una sección por defecto al cargar
+/*   window.onload = () => mostrarSeccion('inicio'); */
+
+/* ---------- OCULTAR SECCIONES DENTRO DEL NAVBAR----------------- */

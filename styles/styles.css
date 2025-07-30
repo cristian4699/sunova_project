@@ -334,64 +334,60 @@ footer p {
 /* -------------------------------------- */
 /* ESTE ES EL CSS DE INFORMATION */
 /* <<<<<<< HEAD */
-#DEC1 {
+/* #DEC1 {
   display: flex;
+text-align: left;
 
-  border-radius: 20%;
 }
-.ContenedorDecadas {
 
-  display: none;
-}
-.ContenedorEnergiasRenovables {
- 
-}
  #DEC1{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+
 } 
 #DEC2{
-    display:flex;
-    border-radius: 20%;
+ text-align: center;
 } 
 #DEC3{
     display:flex;
-    border-radius: 20%;
+    text-align: center;
+  
 } 
 #DEC4{
     display:flex;
-    border-radius: 20%;
-} 
- */
-.ContenedorDecadas {
+    text-align: center;
+    padding: 19px;
+}  */
+ 
+#ContenedorDecadas {
     background-color:var(--gris-claro);
 }
-.ContenedorEnergiasRenovables{
+#ContenedorEnergiasRenovables{
 background-color:var(--gris-claro);
 /* >>>>>>> information */
 }
 #Eolica {
   text-align: center;
-  background-color: #6e8fdc;
+  
 }
 
 #Solar {
   text-align: center;
-  background-color: #6e8fdc;
+ 
 }
 
 #Mareomotriz {
   text-align: center;
-  background-color: #6e8fdc;
+  
 }
 #Geotermica{
    text-align: center;
-  background-color: #6e8fdc;
+  
 }
 
 #Biomasa{
    text-align: center;
-  background-color: #6e8fdc;
+  
 }
 #Eleccion{
   text-align: center;
@@ -399,7 +395,7 @@ background-color:var(--gris-claro);
 
 
 
-.ContenedorEnergiaSolar {
+#ContenedorEnergiaSolar {
       width: 100%;
       height: auto;
       background: linear-gradient(to right, white, transparent), url(IMG_PANEL_5.jpg) no-repeat right;
@@ -412,7 +408,7 @@ background-color:var(--gris-claro);
 
 
 
-.ContenedorEnergiaEolica{
+#ContenedorEnergiaEolica{
  width: 100%;
       height: auto;
       background: linear-gradient(to right, white 40%, transparent), url(IMG_EOLICA.jpeg) no-repeat right;
@@ -421,7 +417,7 @@ background-color:var(--gris-claro);
       align-items: center;
       justify-content: center;
 }
-.ContenedorEnergiaMareomotriz{
+#ContenedorEnergiaMareomotriz{
    width: 100%;
       height: auto;
       background: linear-gradient(to right, white 4%, transparent), url(IMG_MEREO.webp) no-repeat right;
@@ -431,7 +427,7 @@ background-color:var(--gris-claro);
       justify-content: center;
 }
 
-.ContenedorEnergiaGeotermica{
+#ContenedorEnergiaGeotermica{
  width: 100%;
       height: auto;
             background: linear-gradient(to right, white 4%, transparent), url(IMG_GEO2.jpg) no-repeat right;
@@ -440,25 +436,24 @@ background-color:var(--gris-claro);
       align-items: center;
       justify-content: center;
 }
-.ContenedorBiomasaHidroenergía{
+#ContenedorBiomasaHidroenergía{
  width: 100%;
       height: auto;
-      background: linear-gradient(to right, white 40%, transparent), url(IMG_BIO.jpg) no-repeat right;
+      background: linear-gradient(to right, white 4%, transparent), url(IMG_BIO.jpg) no-repeat right;
       background-size: cover;
       background-position: right center;
       align-items: center;
       justify-content: center;
 }
 
-.ContenedorPaneles{
+/* #ContenedorPaneles{
   background-color: silver;
-}
+} */
 
 #NavEne a {
   margin-right: 40px;
   text-decoration: none;
   color: blue;
-  transition: background-color 10s;
 }
 
 
@@ -497,3 +492,82 @@ background-color:var(--gris-claro);
             height: 400px !important; /* Altura fija para todos los gráficos */
         }
 /* ----------------------------------------------------- */
+#NabInfo{
+/* padding: 15px 20px; */
+  display: flex 100%;
+  /* justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gris-claro); */
+}
+
+/* BOTON DE SUBIR */
+
+#botonSubir {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: var(--azul-oscuro);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    #botonSubir:hover {
+      background-color: var(--amarillo-solar);
+    }
+
+
+
+.seccion {
+    display: none;
+  }
+
+  .seccion.activa {
+    display: block;
+  }
+
+#FTPANEL1{
+  float: right;
+  width: 29rem;
+  margin-top: -4.75rem; 
+  margin-right: 4.375rem;
+}
+#FTMONOCRISTALINO{
+  display: block;
+   float: right;
+  width: 20rem;
+  margin-top: -1.75rem; 
+  margin-left: 2.375rem;
+  margin-right: 4.375rem;
+}
+#FTPOLICRISTALINO{
+  display: block;
+  float: left;
+  width: 9rem;
+  margin-top: 0rem; 
+  margin-left: 1.375rem;
+  margin-right: 3rem;
+}
+#FTCAPAFINA{
+   display: block;
+   float: right;
+  width: 11rem;
+  margin-top: -1rem; 
+  margin-left: 2.375rem;
+  margin-right: 9.375rem;
+}
+
+
+.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s;
+    }
