@@ -6,7 +6,35 @@ let about_button = document.getElementById("about_button");
 let store_button = document.getElementById("store_button");
 let login_button = document.getElementById("login_button");
 
+function load_store(){
+    let load_store = document.getElementById("load_button");
+    
+    document.getElementById("main-container").innerHTML = "";
 
+    const plantilla = document.getElementById("store-section");
+
+    // Clonar el contenido de la plantilla
+    const clon = plantilla.content.cloneNode(true);
+
+    // Insertar el contenido clonado en el contenedor
+    document.getElementById("main-container").appendChild(clon);
+
+}
+
+function get_quote(){
+    let load_login = document.getElementById("quote_button");
+    
+    document.getElementById("main-container").innerHTML = "";
+
+    const plantilla = document.getElementById("login-section");
+
+    // Clonar el contenido de la plantilla
+    const clon = plantilla.content.cloneNode(true);
+
+    // Insertar el contenido clonado en el contenedor
+    document.getElementById("main-container").appendChild(clon);
+}
+/* 
 window.addEventListener("load", (event) => {
     let load_store = document.getElementById("load_button");
     
@@ -21,7 +49,7 @@ window.addEventListener("load", (event) => {
     // Insertar el contenido clonado en el contenedor
     document.getElementById("main-container").appendChild(clon);
     });
-});
+}); */
 
 
 home_button.addEventListener("click", function () {
@@ -387,7 +415,7 @@ document.getElementById("botonSubir").addEventListener("click", function () {
 
 /* --------- PRUEBA DE SCRIPT DE OCULTAR SECCIONES--------------- */
  
-      function mostrarSeccion(id) {
+    function mostrarSeccion(id) {
       const secciones = document.querySelectorAll('.seccion');
       secciones.forEach(seccion => {
         seccion.classList.remove('activa');
