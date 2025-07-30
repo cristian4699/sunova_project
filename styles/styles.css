@@ -18,6 +18,7 @@ body {
   color: var(--negro-suave);
   background-color: var(--blanco);
   height: 100vh;
+  height: fit-content;
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
@@ -42,6 +43,7 @@ header {
   border-top: 5px solid var(--amarillo-solar);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .layout-container {
@@ -76,9 +78,11 @@ header {
 }
 
 .navbar .logo {
-  font-weight: bold;
   color: var(--azul-oscuro);
+  font-weight: bold;
   font-size: 22px;
+  text-align: center;
+  width: 15%;
 }
 
 .nav-search {
