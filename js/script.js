@@ -233,7 +233,7 @@ login_button.addEventListener("click", function () {
 });
 
 /* ----------------------  Manejo de templates ----------------*/
-
+/* 
   document.getElementById("main-container").innerHTML = "";
 
   const plantilla = document.getElementById("landing-section");
@@ -242,7 +242,7 @@ login_button.addEventListener("click", function () {
   const clon = plantilla.content.cloneNode(true);
 
   // Insertar el contenido clonado en el contenedor
-  document.getElementById("main-container").appendChild(clon);
+  document.getElementById("main-container").appendChild(clon); */
 
 /* ----------------------  ------------------ ----------------*/
 

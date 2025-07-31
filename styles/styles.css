@@ -300,7 +300,6 @@ footer p {
 }
 
 
-
 /* Estilos agregados Merge desde Landing branch */
 
 .beneficios-solar h4 {
@@ -530,6 +529,15 @@ background-color: white;
   border-bottom: 1px solid var(--gris-claro); */
 }
 
+div.contenido_store {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 /* BOTON DE SUBIR */
 
 #botonSubir {
@@ -602,3 +610,39 @@ background-color: white;
       transform: scale(1.02);
       transition: transform 0.3s;
     }
+/* PRODUCTOS */
+.productos-grid_store {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.producto_store {
+  background-color: var(--gris-claro);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto_store img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.producto_store a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--amarillo-solar);
+  color: var(--azul-oscuro);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.producto_store a:hover {
+  background-color: #d49f00;
+}
+
