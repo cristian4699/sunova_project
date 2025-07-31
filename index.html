@@ -1105,101 +1105,113 @@
 
     <template id="calculator-section">
         <!-- CALCULADORA -->
-        <div class="container col-md-8">
-            <h2 class="mb-4">Calculadora de Energía Renovable (Colombia)</h2>
-            <form id="formularioEnergia">
-                <div class="form-group">
-                    <label for="anio" class="form-label">Año (1965-2021)</label>
-                    <!-- <input type="number" class="form-control" id="anio" required> -->
-                     <select class="form-control" id="anio">
-                        <option>1965</option>
-                        <option>1966</option>
-                        <option>1967</option>
-                        <option>1968</option>
-                        <option>1969</option>
-                        <option>1970</option>
-                        <option>1971</option>
-                        <option>1972</option>
-                        <option>1973</option>
-                        <option>1974</option>
-                        <option>1975</option>
-                        <option>1976</option>
-                        <option>1977</option>
-                        <option>1978</option>
-                        <option>1979</option>
-                        <option>1980</option>
-                        <option>1981</option>
-                        <option>1982</option>
-                        <option>1983</option>
-                        <option>1984</option>
-                        <option>1985</option>
-                        <option>1986</option>
-                        <option>1987</option>
-                        <option>1988</option>
-                        <option>1989</option>
-                        <option>1990</option>
-                        <option>1991</option>
-                        <option>1992</option>
-                        <option>1993</option>
-                        <option>1994</option>
-                        <option>1995</option>
-                        <option>1996</option>
-                        <option>1997</option>
-                        <option>1998</option>
-                        <option>1999</option>
-                        <option>2000</option>
-                        <option>2001</option>
-                        <option>2002</option>
-                        <option>2003</option>
-                        <option>2004</option>
-                        <option>2005</option>
-                        <option>2006</option>
-                        <option>2007</option>
-                        <option>2008</option>
-                        <option>2009</option>
-                        <option>2010</option>
-                        <option>2011</option>
-                        <option>2012</option>
-                        <option>2013</option>
-                        <option>2014</option>
-                        <option>2015</option>
-                        <option>2016</option>
-                        <option>2017</option>
-                        <option>2018</option>
-                        <option>2019</option>
-                        <option>2020</option>
-                        <option>2021</option>
-                    </select>
+        
+        
+            <div class="container">
+                <div class="row justify-content-center" style="margin: 40px 0">
+                    <div class="col-md-8">
+                        <h2 class="mb-4">Calculadora de Energía Renovable (Colombia)</h2>
+                        <form id="formularioEnergia">
+                            <div class="form-group">
+                                <label for="anio" class="form-label">Año (1965-2021)</label>
+                                <!-- <input type="number" class="form-control" id="anio" required> -->
+                                <select class="form-control" id="anio">
+                                    <option>1965</option>
+                                    <option>1966</option>
+                                    <option>1967</option>
+                                    <option>1968</option>
+                                    <option>1969</option>
+                                    <option>1970</option>
+                                    <option>1971</option>
+                                    <option>1972</option>
+                                    <option>1973</option>
+                                    <option>1974</option>
+                                    <option>1975</option>
+                                    <option>1976</option>
+                                    <option>1977</option>
+                                    <option>1978</option>
+                                    <option>1979</option>
+                                    <option>1980</option>
+                                    <option>1981</option>
+                                    <option>1982</option>
+                                    <option>1983</option>
+                                    <option>1984</option>
+                                    <option>1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                    <option>1990</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                    <option>2007</option>
+                                    <option>2008</option>
+                                    <option>2009</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="consumoTotal" class="form-label">Consumo eléctrico total (kWh)</label>
+                                <input type="number" class="form-control" id="consumoTotal" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                        </form>
+
+                        <div class="mt-4" id="resultado"></div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="consumoTotal" class="form-label">Consumo eléctrico total (kWh)</label>
-                    <input type="number" class="form-control" id="consumoTotal" required>
+            
+
+                <!--/ CALCULADORA -->
+            
+                <div class="row justify-content-center" style="margin: 40px 0">
+                    <div class="col-md-8">
+                        
+                        <h1>Datos de Energía Renovable en Colombia</h1>
+
+                        <div class="form-group">
+                            <label for="dataSelector">Selecciona el Conjunto de Datos:</label>
+                            <select id="dataSelector" class="form-control" onchange="loadAndDisplayData()">
+                                <option value="01_renewable-share-energy.csv">Participación de Energías Renovables (Energía Primaria)</option>
+                                <option value="02_modern-renewable-energy-consumption.csv">Consumo de Energía Renovable Moderna</option>
+                                <option value="03_modern-renewable-prod.csv">Producción de Energía Renovable Moderna</option>
+                                <option value="04_share-electricity-renewables.csv">Participación de Renovables en Electricidad</option>
+                                <option value="12_solar-energy-consumption.csv">Consumo de Energía Solar</option>
+                                <option value="14_solar-share-energy.csv">Participación de Energía Solar (Energía Primaria)</option>
+                                <option value="15_share-electricity-solar.csv">Participación de Energía Solar en Electricidad</option>
+                            </select>
+                        </div>
+
+                        <div id="loading">Cargando datos...</div>
+                        <div id="tableContainer"></div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Calcular</button>
-            </form>
-
-            <div class="mt-4" id="resultado"></div>
-        </div>
-
-        <!--/ CALCULADORA -->
-
-        <h1>Datos de Energía Renovable en Colombia</h1>
-
-        <div>
-            <label for="dataSelector">Selecciona el Conjunto de Datos:</label>
-            <select id="dataSelector" onchange="loadAndDisplayData()">
-                <option value="01_renewable-share-energy.csv">Participación de Energías Renovables (Energía Primaria)</option>
-                <option value="02_modern-renewable-energy-consumption.csv">Consumo de Energía Renovable Moderna</option>
-                <option value="03_modern-renewable-prod.csv">Producción de Energía Renovable Moderna</option>
-                <option value="04_share-electricity-renewables.csv">Participación de Renovables en Electricidad</option>
-                <option value="12_solar-energy-consumption.csv">Consumo de Energía Solar</option>
-                <option value="14_solar-share-energy.csv">Participación de Energía Solar (Energía Primaria)</option>
-                <option value="15_share-electricity-solar.csv">Participación de Energía Solar en Electricidad</option>
-            </select>
-        </div>
-
-        <div id="loading">Cargando datos...</div>
-        <div id="tableContainer"></div>
+            </div>
     </template>
 
     <template id="store-section">
@@ -1346,9 +1358,30 @@
     </template>
 
     <template id="login-section">
-        <h1>
-            Hola mundo!
-        </h1>        
+        <div class="d-flex align-items-center justify-content-center" style="margin: 20px 0">
+
+            <div class="card p-4 shadow-sm login-card">
+                <h1 class="text-center mb-4">Iniciar Sesión</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkRemember">
+                        <label class="form-check-label" for="checkRemember">Recordarme</label>
+                    </div>
+                    <div class="d-grid">
+                        <button id="enter_button" type="submit" class="btn btn-primary login_button" onclick="login_button_action()">Entrar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>       
     </template>
 
     <button id="botonSubir">↑</button>

@@ -238,6 +238,18 @@ login_button.addEventListener("click", function () {
   document.getElementById("main-container").appendChild(clon);
 });
 
+/* login_button_action.addEventListener("click", function () {
+  document.getElementById("main-container").innerHTML = "";
+
+  const plantilla = document.getElementById("store-section");
+
+  // Clonar el contenido de la plantilla
+  const clon = plantilla.content.cloneNode(true);
+
+  // Insertar el contenido clonado en el contenedor
+  document.getElementById("main-container").appendChild(clon);
+}); */
+
 /* ----------------------  Manejo de templates ----------------*/
 /* 
   document.getElementById("main-container").innerHTML = "";
@@ -504,3 +516,14 @@ async function loadAndDisplayData() {
 
 /* ----------------------------------------------------------------------------- */
 
+function login_button_action(){
+    document.getElementById("main-container").innerHTML = "";
+
+  const plantilla = document.getElementById("store-section");
+
+  // Clonar el contenido de la plantilla
+  const clon = plantilla.content.cloneNode(true);
+
+  // Insertar el contenido clonado en el contenedor
+  document.getElementById("main-container").appendChild(clon);
+}

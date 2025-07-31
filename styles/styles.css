@@ -546,7 +546,7 @@ div.contenido_store {
       right: 20px;
       padding: 10px 15px;
       font-size: 16px;
-      background-color: var(--azul-oscuro);
+      background-color: var(--amarillo-solar);
       color: white;
       border: none;
       border-radius: 5px;
@@ -556,7 +556,7 @@ div.contenido_store {
     }
 
     #botonSubir:hover {
-      background-color: var(--amarillo-solar);
+      background-color: var(--azul-oscuro);
     }
 
 
@@ -676,4 +676,13 @@ div.contenido_store {
     margin-top: 10px;
 }
 
+.login_button{
+  color: var(--amarillo-solar);
+  background-color: var(--azul-oscuro);
+  font-weight: 400;    
+}
+
+.login-card{
+    border: 2px solid var(--azul-oscuro);
+}
 /* ---------------------------------------------------------------- */
