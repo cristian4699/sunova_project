@@ -386,7 +386,14 @@ text-align: left;
 }
 #ContenedorEnergiasRenovables{
 /* background-color:var(--gris-claro); */
-background-color: white;
+ width: 100%;
+      height: auto;
+      background: url(istockphoto-1169656622-612x612.jpg) no-repeat right;
+      background-size: cover;
+      background-position: right center;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
 
 /* >>>>>>> information */
 }
@@ -553,7 +560,7 @@ div.contenido_store {
       right: 20px;
       padding: 10px 15px;
       font-size: 16px;
-      background-color: var(--azul-oscuro);
+      background-color: var(--amarillo-solar);
       color: white;
       border: none;
       border-radius: 5px;
@@ -563,7 +570,7 @@ div.contenido_store {
     }
 
     #botonSubir:hover {
-      background-color: var(--amarillo-solar);
+      background-color: var(--azul-oscuro);
     }
 
 
@@ -657,3 +664,58 @@ text-align: left;
   background-color: #d49f00;
 }
 
+/* Estilos seccion mostrar datasets  */
+
+.label-dataset {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.select-dataset {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.table-dataset {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.table-dataset th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.table-dataset th {
+    background-color: #f2f2f2;
+}
+#loading {
+    display: none;
+    color: #555;
+    margin-top: 10px;
+}
+
+.login_button{
+  color: var(--amarillo-solar);
+  background-color: var(--azul-oscuro);
+  font-weight: 400;    
+}
+
+.login-card{
+    border: 2px solid var(--azul-oscuro);
+}
+/* ---------------------------------------------------------------- */
+
+.contenedores-calculadora{
+  border: 2px solid var(--amarillo-solar);
+  padding: 2%;
+  background-color: var(--azul-oscuro);
+  color: white;
+}
+
+.contenedores-calculadora > h1{
+  color:white;
+}
+
+#tableContainer > table{
+  margin: 0 auto;
+}
