@@ -352,11 +352,11 @@ footer p {
 
 /* -------------------------------------- */
 /* ESTE ES EL CSS DE INFORMATION */
-/* <<<<<<< HEAD */
-/* #DEC1 {
-  display: flex;
-text-align: left;
 
+/*  #DEC1 {
+text-align: left;
+ } */
+/*
 }
 
  #DEC1{
@@ -382,10 +382,12 @@ text-align: left;
     /* background-color:var(--gris-claro); */
     background-color: white;
     padding: 2%;
+    text-align: left;
 }
 #ContenedorEnergiasRenovables{
 /* background-color:var(--gris-claro); */
 background-color: white;
+
 /* >>>>>>> information */
 }
 
@@ -431,6 +433,7 @@ background-color: white;
       align-items: center;
       justify-content: center;
       padding: 2%;
+      text-align: left;
     }
 
 
@@ -444,6 +447,7 @@ background-color: white;
       background-position: right center;
       align-items: center;
       justify-content: center;
+      text-align: left;
 }
 #ContenedorEnergiaMareomotriz{
    width: 100%;
@@ -453,6 +457,7 @@ background-color: white;
       background-position: right center;
       align-items: center;
       justify-content: center;
+      text-align: left;
 }
 
 #ContenedorEnergiaGeotermica{
@@ -463,6 +468,7 @@ background-color: white;
       background-position: right center;
       align-items: center;
       justify-content: center;
+      text-align: left;
 }
 #ContenedorBiomasaHidroenergía{
  width: 100%;
@@ -472,6 +478,7 @@ background-color: white;
       background-position: right center;
       align-items: center;
       justify-content: center;
+      text-align: left;
 }
 
 #ContenedorPaneles{
@@ -568,6 +575,10 @@ div.contenido_store {
 
   .seccion.activa {
     display: block;
+  }
+
+  #ContenedorPaneles{
+text-align: left;
   }
 
 #FTPANEL1{
