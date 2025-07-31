@@ -63,12 +63,12 @@
                                     </a>
                                     <li id="stadistics_button" class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">
-                                            Estadisticas
+                                            Calculadora
                                         </a>
                                     </li>
                                     <li id="about_button" class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">
-                                            Sobre el proyecto
+                                            Dashboard
                                         </a>
                                     </li>
                                     <li id="store_button" class="nav-item">
@@ -1181,8 +1181,25 @@
             <div class="mt-4" id="resultado"></div>
         </div>
 
-
         <!--/ CALCULADORA -->
+
+        <h1>Datos de Energía Renovable en Colombia</h1>
+
+        <div>
+            <label for="dataSelector">Selecciona el Conjunto de Datos:</label>
+            <select id="dataSelector" onchange="loadAndDisplayData()">
+                <option value="01_renewable-share-energy.csv">Participación de Energías Renovables (Energía Primaria)</option>
+                <option value="02_modern-renewable-energy-consumption.csv">Consumo de Energía Renovable Moderna</option>
+                <option value="03_modern-renewable-prod.csv">Producción de Energía Renovable Moderna</option>
+                <option value="04_share-electricity-renewables.csv">Participación de Renovables en Electricidad</option>
+                <option value="12_solar-energy-consumption.csv">Consumo de Energía Solar</option>
+                <option value="14_solar-share-energy.csv">Participación de Energía Solar (Energía Primaria)</option>
+                <option value="15_share-electricity-solar.csv">Participación de Energía Solar en Electricidad</option>
+            </select>
+        </div>
+
+        <div id="loading">Cargando datos...</div>
+        <div id="tableContainer"></div>
     </template>
 
     <template id="store-section">

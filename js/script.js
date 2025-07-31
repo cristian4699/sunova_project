@@ -435,5 +435,72 @@ document.getElementById("botonSubir").addEventListener("click", function () {
 
 /* ---------- OCULTAR SECCIONES DENTRO DEL NAVBAR----------------- */
 
+/* Javascript para mostrar datasets de manera tabular */
 
+async function loadAndDisplayData() {
+            const dataSelector = document.getElementById('dataSelector');
+            const selectedFile = dataSelector.value;
+            const tableContainer = document.getElementById('tableContainer');
+            const loadingIndicator = document.getElementById('loading');
+
+            tableContainer.innerHTML = ''; // Clear previous table
+            loadingIndicator.style.display = 'block'; // Show loading indicator
+
+            try {
+                const response = await fetch('../assets/' + selectedFile);
+                const csvData = await response.text();
+                displayCsvInTable(csvData, tableContainer);
+            } catch (error) {
+                console.error('Error al cargar el archivo CSV:', error);
+                tableContainer.innerHTML = '<p style="color: red;">Error al cargar los datos. Por favor, asegúrate de que los archivos CSV estén en el mismo directorio que este archivo HTML o verifica la ruta.</p>';
+            } finally {
+                loadingIndicator.style.display = 'none'; // Hide loading indicator
+            }
+        }
+
+        function displayCsvInTable(csv, containerElement) {
+            const lines = csv.split('\n').filter(line => line.trim() !== ''); // Split by line and remove empty lines
+            if (lines.length === 0) {
+                containerElement.innerHTML = '<p>No hay datos disponibles en este archivo.</p>';
+                return;
+            }
+
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Header row
+            const headerLine = lines[0];
+            const headers = headerLine.split(',').map(header => header.trim());
+            const headerRow = document.createElement('tr');
+            headers.forEach(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // Data rows
+            for (let i = 1; i < lines.length; i++) {
+                const dataLine = lines[i];
+                const values = dataLine.split(',').map(value => value.trim());
+                if (values.length === headers.length) { // Ensure consistent number of columns
+                    const dataRow = document.createElement('tr');
+                    values.forEach(valueText => {
+                        const td = document.createElement('td');
+                        td.textContent = valueText;
+                        dataRow.appendChild(td);
+                    });
+                    tbody.appendChild(dataRow);
+                }
+            }
+            table.appendChild(tbody);
+            containerElement.appendChild(table);
+        }
+
+        // Load data for the default selected option when the page loads
+        document.addEventListener('DOMContentLoaded', loadAndDisplayData);
+
+/* ----------------------------------------------------------------------------- */
 
