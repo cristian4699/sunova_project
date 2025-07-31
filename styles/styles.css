@@ -686,3 +686,18 @@ div.contenido_store {
     border: 2px solid var(--azul-oscuro);
 }
 /* ---------------------------------------------------------------- */
+
+.contenedores-calculadora{
+  border: 2px solid var(--amarillo-solar);
+  padding: 2%;
+  background-color: var(--azul-oscuro);
+  color: white;
+}
+
+.contenedores-calculadora > h1{
+  color:white;
+}
+
+#tableContainer > table{
+  margin: 0 auto;
+}
