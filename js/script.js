@@ -539,3 +539,15 @@ function load_developers_section(){
   // Insertar el contenido clonado en el contenedor
   document.getElementById("main-container").appendChild(clon);
 }
+
+function logo_button_action(){
+    document.getElementById("main-container").innerHTML = "";
+
+    const plantilla = document.getElementById("landing-section");
+
+    // Clonar el contenido de la plantilla
+    const clon = plantilla.content.cloneNode(true);
+
+    // Insertar el contenido clonado en el contenedor
+    document.getElementById("main-container").appendChild(clon);
+}

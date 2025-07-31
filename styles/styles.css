@@ -24,6 +24,11 @@ body {
   padding: 0;
   /* overflow-y: hidden; */
 }
+
+.logo{
+  background-color: var(--azul-oscuro);
+}
+
 .hero-solar {
   background: linear-gradient(
     135deg,
