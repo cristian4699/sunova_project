@@ -701,3 +701,7 @@ div.contenido_store {
 #tableContainer > table{
   margin: 0 auto;
 }
+
+.about_picture{
+  width: 100px;
+}
